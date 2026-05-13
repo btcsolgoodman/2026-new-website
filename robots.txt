@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+
+# 네이버 크롤러 우선
+User-agent: Yeti
+Allow: /
+
+# 다음 카카오
+User-agent: Daumoa
+Allow: /
+
+# 구글
+User-agent: Googlebot
+Allow: /
+
+Sitemap: https://semian.co.kr/sitemap.xml

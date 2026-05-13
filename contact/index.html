@@ -52,11 +52,13 @@
       </div>
 
       <!-- Quote Form -->
-      <form class="form" id="form-quote" action="#" method="POST">
+      <form class="form" id="form-quote" name="quote" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/contact/thanks/">
+        <input type="hidden" name="form-name" value="quote">
+        <p style="display:none;"><label>Don't fill: <input name="bot-field"></label></p>
         <div class="form__grid">
           <div class="form__field">
             <label class="form__label">관심 제품</label>
-            <select class="form__select">
+            <select class="form__select" name="product">
               <option>모델 선택 또는 미정</option>
               <optgroup label="Sputter Coaters">
                 <option>SMC-22TS</option>
@@ -81,7 +83,7 @@
           </div>
           <div class="form__field">
             <label class="form__label">응용 분야</label>
-            <select class="form__select">
+            <select class="form__select" name="application">
               <option>분야 선택</option>
               <option>SEM Imaging</option>
               <option>High-Resolution / FE-SEM</option>
@@ -92,23 +94,23 @@
           </div>
           <div class="form__field">
             <label class="form__label">소속 / 기관</label>
-            <input type="text" class="form__input" placeholder="예: KAIST 신소재공학과">
+            <input type="text" class="form__input" name="organization" placeholder="예: KAIST 신소재공학과">
           </div>
           <div class="form__field">
             <label class="form__label">이름</label>
-            <input type="text" class="form__input" placeholder="홍길동">
+            <input type="text" class="form__input" name="name" placeholder="홍길동" required>
           </div>
           <div class="form__field">
             <label class="form__label">이메일</label>
-            <input type="email" class="form__input" placeholder="you@example.com">
+            <input type="email" class="form__input" name="email" placeholder="you@example.com" required>
           </div>
           <div class="form__field">
             <label class="form__label">연락처</label>
-            <input type="tel" class="form__input" placeholder="010-0000-0000">
+            <input type="tel" class="form__input" name="phone" placeholder="010-0000-0000">
           </div>
           <div class="form__field form__field--full">
             <label class="form__label">문의 내용</label>
-            <textarea class="form__textarea" placeholder="예상 사용 빈도, 시료 종류, 예산 범위 등 알려주시면 더 정확한 견적을 안내해드립니다."></textarea>
+            <textarea class="form__textarea" name="message" placeholder="예상 사용 빈도, 시료 종류, 예산 범위 등 알려주시면 더 정확한 견적을 안내해드립니다."></textarea>
           </div>
         </div>
         <button type="submit" class="btn btn--primary form__submit">견적 요청 보내기</button>
