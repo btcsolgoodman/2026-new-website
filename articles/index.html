@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Carbon Coaters | SEMIAN — EDS · EBSD · FIB Analysis</title>
-  <meta name="description" content="SEMIAN 카본 코터 2종. SMC-15E Auto Carbon Coater와 RS-Carbon Rotary Carbon. EDS, EBSD, FIB 분석용 카본 박막.">
+  <title>Articles | SEMIAN — Tutorials, Case Studies, Tech Notes</title>
+  <meta name="description" content="SEMIAN의 기술 자료실. CVD 코팅, 스퍼터링, 응용 사례 등 연구자에게 실용적인 기술 노트를 제공합니다.">
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
   <link rel="stylesheet" href="/styles.css">
@@ -15,9 +15,9 @@
     <div class="site-header__inner">
       <a href="/" class="logo-lockup"><img src="/assets/logo.png" alt="SEMIAN" class="logo-mark"></a>
       <nav class="primary-nav">
-        <a href="/products/" class="primary-nav__item is-active">Products</a>
+        <a href="/products/" class="primary-nav__item">Products</a>
         <a href="/applications/" class="primary-nav__item">Applications</a>
-        <a href="/articles/" class="primary-nav__item">Articles</a>
+        <a href="/articles/" class="primary-nav__item is-active">Articles</a>
         <a href="/news/" class="primary-nav__item">News</a>
         <a href="/about/" class="primary-nav__item">About</a>
       </nav>
@@ -32,73 +32,78 @@
     <div class="page-hero__inner">
       <nav class="breadcrumb">
         <a href="/">Home</a><span class="breadcrumb__sep">·</span>
-        <a href="/products/">Products</a><span class="breadcrumb__sep">·</span>
-        <span class="breadcrumb__current">Carbon Coaters</span>
+        <span class="breadcrumb__current">Articles</span>
       </nav>
-      <h1 class="page-hero__title">Carbon Coaters.</h1>
+      <h1 class="page-hero__title">Articles.</h1>
       <p class="page-hero__lead">
-        EDS, EBSD, FIB 등 X선 분석 시 간섭을 최소화하는 카본 박막 코팅 장비.
-        듀얼 소스 열 증착부터 로터리 카본까지, 분석 목적에 맞춰 선택하실 수 있습니다.
+        Tutorials, Case Studies, Tech Notes — 연구자에게 실용적인 기술 자료를 제공합니다.
+        현재 초안 단계. 정식 발행 시 News 페이지를 통해 안내드립니다.
       </p>
     </div>
   </section>
 
   <section class="section">
     <div class="section__inner">
-      <div class="section-head">
-        <h2 class="section-head__title">2 Models</h2>
-        <div class="section-head__meta">분석용 카본 코팅</div>
-      </div>
-      <div class="product-grid product-grid--2">
 
-        <a href="/products/smc-15e/" class="product-card">
-          <div class="product-card__visual">
-            <img src="/assets/products/carbon-15e.png" alt="SMC-15E Auto Carbon Coater">
-          </div>
-          <div class="product-card__body">
-            <div class="product-card__model">SMC-15E</div>
-            <h3 class="product-card__title">Auto Carbon Coater</h3>
-            <p class="product-card__tagline">듀얼 소스 열 시스템 — Carbon Fiber × 2, Carbon Rod × 2, Carbon + Metal Boat 조합 가능. Upward 방식 + Flash/Pulsed Mode.</p>
-            <span class="product-card__cta">View Details</span>
+      <div class="articles-filter">
+        <button class="articles-filter__btn is-active">All</button>
+        <button class="articles-filter__btn">Tutorial</button>
+        <button class="articles-filter__btn">Tech Note</button>
+        <button class="articles-filter__btn">Case Study</button>
+        <button class="articles-filter__btn">Product</button>
+      </div>
+
+      <div class="articles-index-grid">
+
+        <a href="/articles/cvd-flash-method/" class="article-card">
+          <div class="article-card__cover article-card__cover--1"></div>
+          <div class="article-card__body">
+            <div class="article-card__meta">DRAFT · 2026 · 5 MIN</div>
+            <h3 class="article-card__title">CVD Flash Method를<br>이해하는 방법.</h3>
+            <span class="badge badge--brand">TECH NOTE</span>
           </div>
         </a>
 
-        <a href="/products/rs-carbon/" class="product-card">
-          <div class="product-card__visual">
-            <span class="product-card__badge product-card__badge--new">2026</span>
-            <img src="/assets/products/rs-carbon.jpg" alt="RS-Carbon Rotary Carbon Coater">
+        <a href="/articles/triple-target-sputtering/" class="article-card">
+          <div class="article-card__cover article-card__cover--2">
+            <div class="bars"><span></span><span></span><span></span></div>
           </div>
-          <div class="product-card__body">
-            <div class="product-card__model">RS-Carbon</div>
-            <h3 class="product-card__title">Rotary Carbon Coater</h3>
-            <p class="product-card__tagline">2026 신라인. EDS/EBSD/FIB 분석용 카본 코팅에 최적화. Auto X 스테이지 + Rotation.</p>
-            <span class="product-card__cta">View Details</span>
+          <div class="article-card__body">
+            <div class="article-card__meta">DRAFT · 2026 · 4 MIN</div>
+            <h3 class="article-card__title">트리플 타겟이<br>답하는 질문.</h3>
+            <span class="badge badge--brand">TECH NOTE</span>
+          </div>
+        </a>
+
+        <a href="/articles/rs-series-low-vacuum/" class="article-card">
+          <div class="article-card__cover article-card__cover--3"></div>
+          <div class="article-card__body">
+            <div class="article-card__meta">DRAFT · 2026 · 6 MIN</div>
+            <h3 class="article-card__title">RS 시리즈,<br>저진공의 기준.</h3>
+            <span class="badge badge--brand">PRODUCT</span>
+          </div>
+        </a>
+
+        <a href="/articles/osmium-safety-design/" class="article-card">
+          <div class="article-card__cover article-card__cover--4">
+            <div class="star"></div>
+          </div>
+          <div class="article-card__body">
+            <div class="article-card__meta">DRAFT · 2026 · 5 MIN</div>
+            <h3 class="article-card__title">오스뮴 코팅의<br>안전한 운용.</h3>
+            <span class="badge badge--brand">TECH NOTE</span>
           </div>
         </a>
 
       </div>
-    </div>
-  </section>
 
-  <section class="section section--soft">
-    <div class="section__inner">
-      <div class="section-head">
-        <h2 class="section-head__title">Compare Specifications</h2>
-      </div>
-      <table class="spec-table" style="max-width: var(--max-w);">
-        <thead><tr><th>Model</th><td>Ultimate Vacuum</td><td>Source</td><td>Max Current</td></tr></thead>
-        <tbody>
-          <tr><th>SMC-15E</th><td>1.0×10⁻⁵ Mbar</td><td>Dual Source (Fiber + Rod)</td><td>Rod 100 A / Fiber 30 A</td></tr>
-          <tr><th>RS-Carbon</th><td>5.0×10⁻³ Mbar</td><td>Carbon Rod</td><td>100 A</td></tr>
-        </tbody>
-      </table>
     </div>
   </section>
 
   <section class="section--talk">
     <div class="talk__head">
-      <h2 class="talk__title">Need Help Choosing?</h2>
-      <p class="talk__body">분석 목적과 시료 특성에 맞는 카본 코터를 추천해드립니다.</p>
+      <h2 class="talk__title">Talk to SEMIAN</h2>
+      <p class="talk__body">기술 자료나 응용 사례에 대한 추가 질문은 직접 상담드립니다.</p>
     </div>
     <div class="talk-grid">
       <a href="/contact/?type=quote" class="talk-card">
