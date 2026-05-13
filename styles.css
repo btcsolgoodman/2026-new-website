@@ -127,6 +127,13 @@ input, textarea, select { font: inherit; color: inherit; }
   background: var(--c-navy-mid);
 }
 
+/* Primary nav group wrapper (Products + mega menu) */
+.primary-nav__group {
+  position: static;
+  display: inline-flex;
+  align-items: center;
+}
+
 /* Mega menu — full-width drawer slides down */
 .mega-menu {
   position: absolute;
@@ -142,9 +149,11 @@ input, textarea, select { font: inherit; color: inherit; }
   opacity: 0;
   transform: translateY(-8px);
   transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+  z-index: 99;
 }
-.primary-nav__item:hover + .mega-menu,
-.mega-menu:hover {
+.primary-nav__group:hover .mega-menu,
+.mega-menu:hover,
+.primary-nav__group:focus-within .mega-menu {
   visibility: visible;
   opacity: 1;
   transform: translateY(0);
