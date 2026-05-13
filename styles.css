@@ -273,11 +273,12 @@ input, textarea, select { font: inherit; color: inherit; }
   max-width: 600px;
 }
 .hero__eyebrow {
-  font-size: 10px;
-  color: rgba(168, 197, 214, 0.9);
+  font-size: 11px;
+  color: var(--c-ice);
   letter-spacing: 8px;
-  font-weight: 500;
-  margin-bottom: 56px;
+  font-weight: 600;
+  margin-bottom: 48px;
+  text-transform: uppercase;
 }
 .hero__title {
   font-size: 64px;
@@ -313,6 +314,34 @@ input, textarea, select { font: inherit; color: inherit; }
   color: rgba(255, 255, 255, 0.65);
   letter-spacing: 3px;
   font-weight: 500;
+}
+
+.hero__scroll-cue {
+  position: absolute;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 10px;
+  letter-spacing: 3px;
+  font-weight: 500;
+  pointer-events: none;
+}
+.hero__scroll-cue::after {
+  content: '';
+  width: 1px;
+  height: 28px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%);
+  animation: scrollLine 2.4s ease-in-out infinite;
+}
+@keyframes scrollLine {
+  0%, 100% { transform: translateY(0); opacity: 0.6; }
+  50% { transform: translateY(6px); opacity: 0.2; }
 }
 .hero__visual-glow {
   position: absolute;
@@ -378,7 +407,7 @@ input, textarea, select { font: inherit; color: inherit; }
 .trust-strip__inner {
   max-width: var(--max-w);
   margin: 0 auto;
-  padding: 24px var(--side-pad);
+  padding: 20px var(--side-pad);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1346,16 +1375,24 @@ input, textarea, select { font: inherit; color: inherit; }
 .link-arrow-block {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 10px;
   font-size: 13px;
   color: var(--c-text);
   font-weight: 500;
-  letter-spacing: 0.3px;
-  border-bottom: 1.5px solid var(--c-text);
+  letter-spacing: 0.5px;
   padding-bottom: 4px;
-  transition: color 0.2s, border-color 0.2s;
+  border-bottom: 1.5px solid currentColor;
+  transition: color 0.2s, border-color 0.2s, gap 0.2s;
 }
-.link-arrow-block:hover { color: var(--c-navy-mid); border-color: var(--c-navy-mid); }
+.link-arrow-block::after {
+  content: '→';
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1;
+  transition: transform 0.2s;
+}
+.link-arrow-block:hover { color: var(--c-navy-mid); gap: 14px; }
+.link-arrow-block:hover::after { transform: translateX(2px); }
 
 /* ============================================================
    SPEC TABLE
