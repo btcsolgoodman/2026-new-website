@@ -81,38 +81,8 @@ button { font: inherit; background: none; border: none; cursor: pointer; color: 
   align-items: center;
   gap: 64px;
 }
-.logo-lockup {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  line-height: 1;
-  text-decoration: none;
-}
-.logo-wordmark {
-  font-family: var(--f-sans);
-  font-weight: 800;
-  font-size: 26px;
-  color: var(--c-navy-mid);
-  letter-spacing: -0.4px;
-  line-height: 1;
-}
-.logo-tagline {
-  font-family: var(--f-sans);
-  font-weight: 500;
-  font-size: 7.5px;
-  color: var(--c-text-soft2);
-  letter-spacing: 2.8px;
-  margin-top: 6px;
-  padding-top: 5px;
-  border-top: 0.5px solid var(--c-border-mid);
-  align-self: stretch;
-  white-space: nowrap;
-}
-.logo-lockup--white .logo-wordmark { color: #FFFFFF; }
-.logo-lockup--white .logo-tagline {
-  color: rgba(255, 255, 255, 0.65);
-  border-top-color: rgba(255, 255, 255, 0.3);
-}
+.logo-lockup { display: inline-flex; align-items: center; }
+.logo-mark { height: 36px; width: auto; }
 
 .primary-nav {
   display: flex;
