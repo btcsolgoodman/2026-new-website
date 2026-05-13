@@ -3,30 +3,79 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SEMIAN | Beyond the Surface</title>
-  <meta name="description" content="(주)세미안은 전자현미경 시료 전처리 장비를 100% 자체 개발·제조하는 정밀과학장비 전문 기업입니다.">
+  <title>SEMIAN | Beyond the Surface — 정밀과학장비, 한국에서 직접</title>
+  <meta name="description" content="(주)세미안은 30년의 SEM 연구개발 경력을 바탕으로 전자현미경 시료 전처리 장비를 100% 자체 개발·제조하는 정밀과학장비 전문 기업입니다.">
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
 
   <!-- =========================================================
-       HEADER / NAVIGATION
+       HEADER
        ========================================================= -->
   <header class="site-header">
     <div class="site-header__inner">
 
       <a href="/" class="logo-lockup" aria-label="SEMIAN">
-        <img src="assets/logo.png" alt="SEMIAN" class="logo-mark">
+        <img src="/assets/logo.png" alt="SEMIAN" class="logo-mark">
       </a>
 
       <nav class="primary-nav" aria-label="주 메뉴">
-        <a href="/products" class="primary-nav__item">Products</a>
-        <a href="/applications" class="primary-nav__item">Applications</a>
-        <a href="/articles" class="primary-nav__item">Articles</a>
-        <a href="/news" class="primary-nav__item">News</a>
-        <a href="/about" class="primary-nav__item">About</a>
+        <a href="/products/" class="primary-nav__item">Products</a>
+        <a href="/applications/" class="primary-nav__item">Applications</a>
+        <a href="/articles/" class="primary-nav__item">Articles</a>
+        <a href="/news/" class="primary-nav__item">News</a>
+        <a href="/about/" class="primary-nav__item">About</a>
+
+        <!-- Mega menu: Products -->
+        <div class="mega-menu" aria-hidden="true">
+          <div class="mega-menu__inner">
+
+            <div class="mega-menu__col">
+              <div class="mega-menu__heading">SPUTTER COATERS</div>
+              <div class="mega-menu__list">
+                <a href="/products/smc-22ts/" class="mega-menu__link"><strong>SMC-22TS</strong><em>Triple Gun Sputter</em></a>
+                <a href="/products/smc-22td/" class="mega-menu__link"><strong>SMC-22TD</strong><em>Double Gun Sputter · New</em></a>
+                <a href="/products/smc-15s/" class="mega-menu__link"><strong>SMC-15S</strong><em>HV Sputter</em></a>
+                <a href="/products/smc-10s/" class="mega-menu__link"><strong>SMC-10S</strong><em>Mini Sputter</em></a>
+                <a href="/products/rs/" class="mega-menu__link"><strong>RS</strong><em>Rotary Sputter · 2026</em></a>
+                <a href="/products/rs-tf/" class="mega-menu__link"><strong>RS-TF</strong><em>Rotary Thin Film · 2026</em></a>
+              </div>
+            </div>
+
+            <div class="mega-menu__col">
+              <div class="mega-menu__heading">CARBON COATERS</div>
+              <div class="mega-menu__list">
+                <a href="/products/smc-15e/" class="mega-menu__link"><strong>SMC-15E</strong><em>Auto Carbon Coater</em></a>
+                <a href="/products/rs-carbon/" class="mega-menu__link"><strong>RS-Carbon</strong><em>Rotary Carbon · 2026</em></a>
+              </div>
+            </div>
+
+            <div class="mega-menu__col">
+              <div class="mega-menu__heading">OSMIUM COATERS</div>
+              <div class="mega-menu__list">
+                <a href="/products/soc-12f/" class="mega-menu__link"><strong>SOC-12F</strong><em>Fume Integrated · Patented</em></a>
+                <a href="/products/soc-12n/" class="mega-menu__link"><strong>SOC-12N</strong><em>Export Model</em></a>
+              </div>
+            </div>
+
+            <div class="mega-menu__col">
+              <div class="mega-menu__heading">GLOW DISCHARGE</div>
+              <div class="mega-menu__list">
+                <a href="/products/smc-10g/" class="mega-menu__link"><strong>SMC-10G</strong><em>Compact Plasma</em></a>
+              </div>
+            </div>
+
+            <div class="mega-menu__col">
+              <div class="mega-menu__heading">PLASMA CLEANERS</div>
+              <div class="mega-menu__list">
+                <a href="/products/plasma/" class="mega-menu__link"><strong>HPT Plasma Cleaner</strong><em>Coming Soon</em></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
       </nav>
 
       <div class="header-actions">
@@ -38,41 +87,60 @@
           <span class="lang-toggle__sep">|</span>
           <span>EN</span>
         </div>
-        <a href="/contact" class="btn-contact">Contact</a>
+        <a href="/contact/" class="btn-contact">Contact</a>
       </div>
 
     </div>
   </header>
 
   <!-- =========================================================
-       HERO
+       HERO — Asymmetric split
        ========================================================= -->
   <section class="hero">
-    <div class="hero__glow"></div>
-    <div class="hero__ring hero__ring--outer"></div>
-    <div class="hero__ring hero__ring--inner"></div>
+    <div class="hero__grid">
 
-    <div class="hero__inner">
-      <div class="hero__eyebrow">BEYOND THE SURFACE</div>
-      <h1 class="hero__title">
-        우리는 도구를<br>만들지 않습니다.
-      </h1>
-      <p class="hero__body">
-        발견의 도구를 만듭니다. 30년의 SEM 연구 경력에 뿌리를 둔 (주)세미안의 정밀 코팅 장비.
-      </p>
-      <div class="hero__actions">
-        <a href="/products" class="btn btn--primary">Explore</a>
-        <a href="/about" class="link-ghost">Watch the film →</a>
+      <div class="hero__text">
+        <div class="hero__eyebrow">BEYOND THE SURFACE</div>
+        <h1 class="hero__title">
+          30년의 SEM 경력으로,<br>
+          한국에서 직접 만듭니다.
+        </h1>
+        <p class="hero__body">
+          (주)세미안은 전자현미경 시료 전처리 장비를 100% 자체 개발·제조하는 정밀과학장비 전문 기업입니다.
+          CVD 오스뮴 코팅부터 자동 시료 교환까지, 30년의 연구개발 경력이 모든 장비에 녹아있습니다.
+        </p>
+        <div class="hero__actions">
+          <a href="/products/" class="btn btn--primary">Explore Products</a>
+          <a href="/catalog/" class="link-arrow-block">카탈로그 다운로드</a>
+        </div>
       </div>
-    </div>
 
-    <div class="hero__stats">
-      <div class="stat"><div class="stat__label">EST.</div><div class="stat__value">2020</div></div>
-      <div class="stat"><div class="stat__label">INSTRUMENTS</div><div class="stat__value">12</div></div>
-      <div class="stat"><div class="stat__label">PATENTS</div><div class="stat__value">2</div></div>
-      <div class="stat"><div class="stat__label">MADE IN</div><div class="stat__value">Korea</div></div>
+      <div class="hero__visual">
+        <div class="hero__visual-glow"></div>
+        <div class="hero__visual-ring hero__visual-ring--outer"></div>
+        <div class="hero__visual-ring"></div>
+        <div class="hero__visual-label">EST. 2020 · DAEJEON</div>
+        <div class="hero__visual-meta">
+          <span>SEM SAMPLE PREPARATION</span>
+          <span>12 INSTRUMENTS</span>
+        </div>
+      </div>
+
     </div>
   </section>
+
+  <!-- Trust strip -->
+  <div class="trust-strip">
+    <div class="trust-strip__inner">
+      <span class="trust-strip__item"><strong>30+</strong>YEARS SEM EXPERTISE</span>
+      <span class="trust-strip__sep">·</span>
+      <span class="trust-strip__item"><strong>100%</strong>IN-HOUSE ENGINEERING</span>
+      <span class="trust-strip__sep">·</span>
+      <span class="trust-strip__item"><strong>2</strong>PATENTS · CVD FLASH</span>
+      <span class="trust-strip__sep">·</span>
+      <span class="trust-strip__item">MADE IN KOREA</span>
+    </div>
+  </div>
 
   <!-- =========================================================
        PHILOSOPHY
@@ -81,154 +149,263 @@
     <div class="philosophy__grid">
       <div>
         <div class="eyebrow">PHILOSOPHY</div>
-        <h2 class="philosophy__title">측정 가능한<br>정밀.</h2>
+        <h2 class="philosophy__title">정밀은<br>우연이 아닙니다.</h2>
       </div>
-      <p class="philosophy__body">
-        세미안은 연구자가 한 번에 답을 얻도록 설계합니다. CVD 오스뮴 코팅부터 자동 시료 교환까지, 안전과 정밀을 동시에 추구합니다.
-      </p>
+      <div class="philosophy__body">
+        <p>
+          CEO의 30년 SEM 연구개발 경력이 모든 장비의 설계 기반입니다.
+          CVD Flash Method, 자동 시료 교환, FTM 0.1nm 정밀 제어 — 연구자가 한 번에 답을 얻도록 설계합니다.
+        </p>
+        <p>
+          개발에서 제조, 설치, 유지보수까지 한 손에. OEM 의존 없이 100% 자체 엔지니어링으로 완성합니다.
+        </p>
+      </div>
     </div>
   </section>
 
   <!-- =========================================================
-       BY APPLICATION
+       PRODUCT CATEGORIES — 5 Technologies
+       ========================================================= -->
+  <section class="section section--soft">
+    <div class="section__inner">
+      <div class="section-head">
+        <h2 class="section-head__title">By Technology</h2>
+        <div class="section-head__meta">5 Categories · 12 Instruments</div>
+      </div>
+
+      <div class="category-grid">
+
+        <a href="/products/sputter/" class="category-card">
+          <div class="category-card__visual">
+            <div class="category-card__visual-glow"></div>
+            <div class="category-card__visual-ring"></div>
+            <span class="category-card__index">01</span>
+            <span class="category-card__count">6 INSTRUMENTS</span>
+          </div>
+          <div class="category-card__body">
+            <h3 class="category-card__title">Sputter Coaters</h3>
+            <p class="category-card__meta">FE-SEM 박막 · 분석 코팅 · Pt·Cr·C 다타겟</p>
+            <span class="category-card__cta">View Models</span>
+          </div>
+        </a>
+
+        <a href="/products/carbon/" class="category-card">
+          <div class="category-card__visual category-card__visual--alt">
+            <div class="category-card__visual-glow"></div>
+            <div class="category-card__visual-ring"></div>
+            <span class="category-card__index">02</span>
+            <span class="category-card__count">2 INSTRUMENTS</span>
+          </div>
+          <div class="category-card__body">
+            <h3 class="category-card__title">Carbon Coaters</h3>
+            <p class="category-card__meta">EDS · EBSD · FIB 분석용 카본 박막</p>
+            <span class="category-card__cta">View Models</span>
+          </div>
+        </a>
+
+        <a href="/products/osmium/" class="category-card">
+          <div class="category-card__visual">
+            <div class="category-card__visual-glow"></div>
+            <div class="category-card__visual-ring"></div>
+            <span class="category-card__index">03</span>
+            <span class="category-card__count">2 INSTRUMENTS</span>
+          </div>
+          <div class="category-card__body">
+            <h3 class="category-card__title">Osmium Coaters</h3>
+            <p class="category-card__meta">CVD 방식 · Flash Method · 특허 2건</p>
+            <span class="category-card__cta">View Models</span>
+          </div>
+        </a>
+
+        <a href="/products/glow/" class="category-card">
+          <div class="category-card__visual category-card__visual--soft">
+            <span class="category-card__index" style="color: rgba(43, 70, 112, 0.4);">04</span>
+            <span class="category-card__count" style="color: rgba(43, 70, 112, 0.7);">1 INSTRUMENT</span>
+          </div>
+          <div class="category-card__body">
+            <h3 class="category-card__title">Glow Discharge</h3>
+            <p class="category-card__meta">플라즈마 표면 처리 · 친수성·소수성 변환</p>
+            <span class="category-card__cta">View Model</span>
+          </div>
+        </a>
+
+        <a href="/products/plasma/" class="category-card">
+          <div class="category-card__visual">
+            <div class="category-card__visual-glow"></div>
+            <span class="category-card__index">05</span>
+            <span class="category-card__count">COMING SOON</span>
+          </div>
+          <div class="category-card__body">
+            <h3 class="category-card__title">Plasma Cleaners</h3>
+            <p class="category-card__meta">HPT 시리즈 · 개발 중</p>
+            <span class="category-card__cta">Learn More</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       FEATURED BANNER — RS Series 2026
+       ========================================================= -->
+  <section class="section--featured-banner">
+    <div class="featured-banner__inner">
+      <div class="featured-banner__text">
+        <div class="featured-banner__eyebrow">2026 NEW LINE</div>
+        <h2 class="featured-banner__title">
+          Rotary Sputter<br>Coater Series.
+        </h2>
+        <p class="featured-banner__body">
+          저진공으로 고진공 코팅 성능에 근접한 모듈러 코터 시리즈.
+          연구실 환경에 맞춰 3가지 모델을 선택하실 수 있습니다.
+        </p>
+        <div class="featured-banner__models">RS · RS-TF · RS-CARBON</div>
+        <a href="/products/" class="link-arrow-block" style="color: white; border-color: white;">Explore RS Series</a>
+      </div>
+      <div class="featured-banner__visual"></div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       WHY SEMIAN — 3 numbers
+       ========================================================= -->
+  <section class="section--why">
+    <div class="section__inner">
+      <div class="section-head">
+        <h2 class="section-head__title">Why SEMIAN</h2>
+        <div class="section-head__meta">정직하게, 한국에서</div>
+      </div>
+
+      <div class="why-grid">
+
+        <div class="why-card">
+          <div class="why-card__num">30<small>+</small></div>
+          <div class="why-card__label">YEARS SEM EXPERTISE</div>
+          <p class="why-card__body">
+            CEO의 30년 SEM 연구개발 경력이 모든 장비 설계의 기반.
+            연구자가 어떤 결과를 원하는지 이미 알고 있습니다.
+          </p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-card__num">100<small>%</small></div>
+          <div class="why-card__label">IN-HOUSE ENGINEERING</div>
+          <p class="why-card__body">
+            개발·설계·제조·설치·유지보수 일원화.
+            OEM 의존 없이 100% 자체 엔지니어링으로 완성합니다.
+          </p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-card__num">24<small>h</small></div>
+          <div class="why-card__label">KOREA RESPONSE</div>
+          <p class="why-card__body">
+            한국 내 즉시 대응. 글로벌사의 수 주 티켓 대기 없이
+            엔지니어가 직접 응대합니다.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       BY APPLICATION (보조)
        ========================================================= -->
   <section class="section section--application">
-    <div class="section-head section-head--dark">
-      <h2 class="section-head__title">By Application</h2>
-      <span class="section-head__plus">+</span>
-      <div class="section-head__line"></div>
-      <div class="section-head__dots">
-        <span class="dot is-active"></span>
-        <span class="dot"></span>
+    <div class="section__inner">
+      <div class="section-head section-head--dark">
+        <h2 class="section-head__title">By Application</h2>
+        <div class="section-head__meta">사용 분야별 진입</div>
       </div>
-    </div>
 
-    <div class="cards-grid cards-grid--4">
-
-      <article class="card card--application card--1">
-        <div class="card__bg-glow"></div>
-        <div class="card__bg-ring"></div>
-        <span class="card__index">01</span>
-        <div class="card__content">
-          <h3 class="card__title">SEM Imaging</h3>
-          <p class="card__meta">일상 SEM 분석 · 3 instruments</p>
-        </div>
-      </article>
-
-      <article class="card card--application card--2">
-        <div class="card__bg-blobs"></div>
-        <span class="card__index">02</span>
-        <div class="card__content">
-          <h3 class="card__title">High-Resolution</h3>
-          <p class="card__meta">FE-SEM · 박막 연구 · 4 instruments</p>
-        </div>
-      </article>
-
-      <article class="card card--application card--3">
-        <div class="card__bg-orbit"></div>
-        <span class="card__index">03</span>
-        <div class="card__content">
-          <h3 class="card__title">TEM &amp; Analytical</h3>
-          <p class="card__meta">CVD · EDS · EBSD · 4 instruments</p>
-        </div>
-      </article>
-
-      <article class="card card--application card--4">
-        <div class="card__bg-plasma"></div>
-        <span class="card__index">04</span>
-        <div class="card__content">
-          <h3 class="card__title">Surface Treatment</h3>
-          <p class="card__meta">플라즈마 · 친수성 변환 · 2 instruments</p>
-        </div>
-      </article>
-
-    </div>
-  </section>
-
-  <!-- =========================================================
-       FEATURED STORY
-       ========================================================= -->
-  <section class="section section--featured">
-    <div class="featured__grid">
-      <div class="featured__visual-wrap">
-        <div class="eyebrow eyebrow--brand">FEATURED · 2026.05</div>
-        <div class="featured__visual">
-          <div class="featured__visual-glow"></div>
-          <div class="featured__visual-ring"></div>
-          <div class="featured__visual-caption">
-            <div>
-              <div class="featured__visual-label">CASE STUDY · #003</div>
-              <div class="featured__visual-sub">5 nm · 100,000×</div>
-            </div>
-            <div class="featured__visual-tag">SOC-12F</div>
+      <div class="application-grid">
+        <a href="/applications/sem-imaging/" class="application-card application-card--1">
+          <span class="application-card__index">01</span>
+          <div class="application-card__content">
+            <h3 class="application-card__title">SEM Imaging</h3>
+            <p class="application-card__meta">일상 SEM 분석 · 3 instruments</p>
           </div>
-        </div>
-      </div>
-      <div class="featured__text">
-        <h2 class="featured__title">박막 한 장에<br>담긴 우주.</h2>
-        <p class="featured__body">
-          국내 반도체 분석 연구실은 SOC-12F의 Flash Method 오스뮴 코팅으로 결정화 없는 비정질 박막을 형성했습니다. FE-SEM 100,000× 배율에서 시료 본연의 미세구조를 관찰할 수 있게 된 순간, 도구가 어떻게 발견을 가속하는지 다시 확인합니다.
-        </p>
-        <a href="/articles/case-003" class="read-more">
-          <span class="read-more__label">Read the full story</span>
-          <span class="read-more__meta">5 MIN READ</span>
+        </a>
+        <a href="/applications/high-resolution/" class="application-card application-card--2">
+          <span class="application-card__index">02</span>
+          <div class="application-card__content">
+            <h3 class="application-card__title">High-Resolution</h3>
+            <p class="application-card__meta">FE-SEM · 박막 연구 · 4 instruments</p>
+          </div>
+        </a>
+        <a href="/applications/tem-analytical/" class="application-card application-card--3">
+          <span class="application-card__index">03</span>
+          <div class="application-card__content">
+            <h3 class="application-card__title">TEM &amp; Analytical</h3>
+            <p class="application-card__meta">CVD · EDS · EBSD · 4 instruments</p>
+          </div>
+        </a>
+        <a href="/applications/surface-treatment/" class="application-card application-card--4">
+          <span class="application-card__index">04</span>
+          <div class="application-card__content">
+            <h3 class="application-card__title">Surface Treatment</h3>
+            <p class="application-card__meta">플라즈마 · 친수성 변환 · 2 instruments</p>
+          </div>
         </a>
       </div>
     </div>
   </section>
 
   <!-- =========================================================
-       ARTICLES
+       ARTICLES (placeholder, 추후 진짜 콘텐츠로 교체)
        ========================================================= -->
-  <section class="section section--articles">
-    <div class="section-head">
-      <h2 class="section-head__title">Articles</h2>
-      <span class="section-head__plus section-head__plus--brand">+</span>
-      <div class="section-head__line section-head__line--light"></div>
-    </div>
+  <section class="section--articles">
+    <div class="section__inner">
+      <div class="section-head">
+        <h2 class="section-head__title">Articles</h2>
+        <div class="section-head__meta">Tutorials · Case Studies · Tech Notes</div>
+      </div>
 
-    <div class="cards-grid cards-grid--4 cards-grid--articles">
+      <div class="cards-grid cards-grid--4">
 
-      <article class="article-card">
-        <div class="article-card__cover article-card__cover--1"></div>
-        <div class="article-card__body">
-          <div class="article-card__meta">2026.05 · 5 MIN</div>
-          <h3 class="article-card__title">박막 한 장에<br>담긴 우주.</h3>
-          <span class="badge badge--brand">CASE STUDY</span>
-        </div>
-      </article>
+        <article class="article-card">
+          <div class="article-card__cover article-card__cover--1"></div>
+          <div class="article-card__body">
+            <div class="article-card__meta">COMING SOON · 2026</div>
+            <h3 class="article-card__title">CVD Flash Method를<br>이해하는 방법.</h3>
+            <span class="badge badge--brand">TECH NOTE</span>
+          </div>
+        </article>
 
-      <article class="article-card">
-        <div class="article-card__cover article-card__cover--2">
-          <div class="bars"><span></span><span></span><span></span></div>
-        </div>
-        <div class="article-card__body">
-          <div class="article-card__meta">2026.04 · 3 MIN</div>
-          <h3 class="article-card__title">트리플 타겟이<br>답하는 질문.</h3>
-          <span class="badge badge--brand">TECH NOTE</span>
-        </div>
-      </article>
+        <article class="article-card">
+          <div class="article-card__cover article-card__cover--2">
+            <div class="bars"><span></span><span></span><span></span></div>
+          </div>
+          <div class="article-card__body">
+            <div class="article-card__meta">COMING SOON · 2026</div>
+            <h3 class="article-card__title">트리플 타겟이<br>답하는 질문.</h3>
+            <span class="badge badge--brand">TECH NOTE</span>
+          </div>
+        </article>
 
-      <article class="article-card">
-        <div class="article-card__cover article-card__cover--3"></div>
-        <div class="article-card__body">
-          <div class="article-card__meta">2026.03 · 4 MIN</div>
-          <h3 class="article-card__title">RS 시리즈,<br>저진공의 기준.</h3>
-          <span class="badge badge--brand">PRODUCT</span>
-        </div>
-      </article>
+        <article class="article-card">
+          <div class="article-card__cover article-card__cover--3"></div>
+          <div class="article-card__body">
+            <div class="article-card__meta">COMING SOON · 2026</div>
+            <h3 class="article-card__title">RS 시리즈,<br>저진공의 기준.</h3>
+            <span class="badge badge--brand">PRODUCT</span>
+          </div>
+        </article>
 
-      <article class="article-card">
-        <div class="article-card__cover article-card__cover--4">
-          <div class="star"></div>
-        </div>
-        <div class="article-card__body">
-          <div class="article-card__meta">2026.02 · 6 MIN</div>
-          <h3 class="article-card__title">CVD가 답하는<br>다공성 시료.</h3>
-          <span class="badge badge--brand">TECH NOTE</span>
-        </div>
-      </article>
+        <article class="article-card">
+          <div class="article-card__cover article-card__cover--4">
+            <div class="star"></div>
+          </div>
+          <div class="article-card__body">
+            <div class="article-card__meta">COMING SOON · 2026</div>
+            <h3 class="article-card__title">CVD가 답하는<br>다공성 시료.</h3>
+            <span class="badge badge--brand">TECH NOTE</span>
+          </div>
+        </article>
 
+      </div>
     </div>
   </section>
 
@@ -244,20 +421,20 @@
             <div class="eyebrow eyebrow--brand">NEWS</div>
             <h2 class="news-column__title">소식</h2>
           </div>
-          <a href="/news" class="link-arrow">All →</a>
+          <a href="/news/" class="link-arrow">All →</a>
         </div>
         <ul class="news-list">
           <li>
-            <div class="news-list__date">2026.05.10</div>
+            <div class="news-list__date">May 10, 2026</div>
             <div class="news-list__title">RS 시리즈 정식 출시</div>
           </li>
           <li>
-            <div class="news-list__date">2026.04.15</div>
-            <div class="news-list__title">SOC-12N 매뉴얼 v05</div>
+            <div class="news-list__date">Apr 15, 2026</div>
+            <div class="news-list__title">SOC-12N 매뉴얼 v05 업데이트</div>
           </li>
           <li>
-            <div class="news-list__date">2026.01.10</div>
-            <div class="news-list__title">SMC-22TS 사양시트</div>
+            <div class="news-list__date">Jan 10, 2026</div>
+            <div class="news-list__title">SMC-22TS 사양시트 공개</div>
           </li>
         </ul>
       </div>
@@ -268,19 +445,19 @@
             <div class="eyebrow eyebrow--brand">EXHIBITIONS</div>
             <h2 class="news-column__title">전시</h2>
           </div>
-          <a href="/news/exhibitions" class="link-arrow">All →</a>
+          <a href="/news/exhibitions/" class="link-arrow">All →</a>
         </div>
         <ul class="news-list">
           <li>
-            <div class="news-list__date news-list__date--upcoming">UPCOMING · 06.04 — 06.07</div>
+            <div class="news-list__date news-list__date--upcoming">UPCOMING · JUN 4 — JUN 7, 2026</div>
             <div class="news-list__title">[서울] 국제나노기술전시회</div>
           </li>
           <li>
-            <div class="news-list__date">2024.05.21</div>
+            <div class="news-list__date">May 21, 2024</div>
             <div class="news-list__title">[부산] 한국현미경학회</div>
           </li>
           <li>
-            <div class="news-list__date">2024.03.06</div>
+            <div class="news-list__date">Mar 6, 2024</div>
             <div class="news-list__title">[서울] InterBattery 2024</div>
           </li>
         </ul>
@@ -290,24 +467,47 @@
   </section>
 
   <!-- =========================================================
-       GET IN TOUCH
+       TALK TO SEMIAN — 3 box
        ========================================================= -->
-  <section class="section section--contact">
-    <div class="contact__inner">
-      <div class="eyebrow eyebrow--brand">GET IN TOUCH</div>
-      <h2 class="contact__title">자세한 사양과 견적을<br>안내해드립니다.</h2>
-      <p class="contact__body">
-        연구실 환경에 맞는 모델 추천부터 설치·교육까지 직접 상담합니다.
-      </p>
-      <div class="contact__actions">
-        <a href="/contact" class="btn btn--primary">견적 문의</a>
-        <a href="/catalog" class="btn btn--ghost">카탈로그 다운로드</a>
-      </div>
-      <div class="contact__direct">
-        <a href="mailto:info@semian.co.kr">info@semian.co.kr</a>
-        <span class="contact__sep">·</span>
-        <a href="tel:+82428611878">+82.42.861.1878</a>
-      </div>
+  <section class="section--talk">
+    <div class="talk__head">
+      <h2 class="talk__title">Talk to SEMIAN</h2>
+      <p class="talk__body">연구실 환경에 맞는 모델 추천부터 설치·교육까지 직접 상담합니다.</p>
+    </div>
+
+    <div class="talk-grid">
+      <a href="/contact/?type=quote" class="talk-card">
+        <div class="talk-card__icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        </div>
+        <h3 class="talk-card__title">견적 문의</h3>
+        <p class="talk-card__body">제품 선택과 사양에 맞는 정확한 견적을 안내해드립니다.</p>
+        <span class="talk-card__cta">Request a Quote</span>
+      </a>
+
+      <a href="/contact/?type=demo" class="talk-card">
+        <div class="talk-card__icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        </div>
+        <h3 class="talk-card__title">데모 신청</h3>
+        <p class="talk-card__body">현장 또는 원격으로 장비 시연을 받아보실 수 있습니다.</p>
+        <span class="talk-card__cta">Book a Demo</span>
+      </a>
+
+      <a href="/catalog/" class="talk-card">
+        <div class="talk-card__icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        </div>
+        <h3 class="talk-card__title">카탈로그 다운로드</h3>
+        <p class="talk-card__body">제품 카탈로그·사양서·매뉴얼을 한곳에서 받아보세요.</p>
+        <span class="talk-card__cta">Download</span>
+      </a>
+    </div>
+
+    <div class="talk__direct">
+      <a href="mailto:info@semian.co.kr">info@semian.co.kr</a>
+      <span class="talk__direct-sep">·</span>
+      <a href="tel:+82428611878">+82.42.861.1878</a>
     </div>
   </section>
 
@@ -317,9 +517,9 @@
   <footer class="site-footer">
     <div class="site-footer__grid">
       <div class="site-footer__brand">
-        <img src="assets/logo-white.svg" alt="SEMIAN" class="logo-mark logo-mark--white">
+        <img src="/assets/logo-white.svg" alt="SEMIAN" class="logo-mark logo-mark--white">
         <address class="site-footer__address">
-          (주)세미안<br>
+          (주)세미안 / SEMIAN Co., Ltd.<br>
           대전광역시 유성구 대학로 99<br>
           충남대학교 산학연 교육연구관 810호<br><br>
           +82.42.861.1878<br>
@@ -330,30 +530,29 @@
       <div>
         <div class="footer-col__head">PRODUCTS</div>
         <ul class="footer-col">
-          <li>SEM Imaging</li>
-          <li>High-Resolution</li>
-          <li>TEM &amp; Analytical</li>
-          <li>Surface Treatment</li>
+          <li><a href="/products/sputter/">Sputter Coaters</a></li>
+          <li><a href="/products/carbon/">Carbon Coaters</a></li>
+          <li><a href="/products/osmium/">Osmium Coaters</a></li>
+          <li><a href="/products/glow/">Glow Discharge</a></li>
+          <li><a href="/products/plasma/">Plasma Cleaners</a></li>
         </ul>
       </div>
 
       <div>
         <div class="footer-col__head">RESOURCES</div>
         <ul class="footer-col">
-          <li>Catalog</li>
-          <li>Articles</li>
-          <li>Manuals</li>
-          <li>Gallery</li>
+          <li><a href="/catalog/">Catalog</a></li>
+          <li><a href="/articles/">Articles</a></li>
+          <li><a href="/news/">News &amp; Events</a></li>
+          <li><a href="/applications/">Applications</a></li>
         </ul>
       </div>
 
       <div>
         <div class="footer-col__head">COMPANY</div>
         <ul class="footer-col">
-          <li>About</li>
-          <li>Customers</li>
-          <li>Careers</li>
-          <li>Contact</li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/contact/">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -361,7 +560,7 @@
     <div class="site-footer__bottom">
       <div>© 2020-2026 SEMIAN Co., Ltd.</div>
       <div class="site-footer__legal">
-        <span>한국어 · English</span>
+        <span>KR | EN</span>
         <span>Privacy</span>
         <span>Terms</span>
       </div>

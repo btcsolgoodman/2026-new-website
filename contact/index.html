@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | SEMIAN — Quote, Demo, Support</title>
+  <meta name="description" content="(주)세미안 견적 문의·데모 신청·기술 지원. +82.42.861.1878 / info@semian.co.kr">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="/" class="logo-lockup"><img src="/assets/logo.png" alt="SEMIAN" class="logo-mark"></a>
+      <nav class="primary-nav">
+        <a href="/products/" class="primary-nav__item">Products</a>
+        <a href="/applications/" class="primary-nav__item">Applications</a>
+        <a href="/articles/" class="primary-nav__item">Articles</a>
+        <a href="/news/" class="primary-nav__item">News</a>
+        <a href="/about/" class="primary-nav__item">About</a>
+      </nav>
+      <div class="header-actions">
+        <div class="lang-toggle"><span class="lang-toggle__active">KR</span><span class="lang-toggle__sep">|</span><span>EN</span></div>
+        <a href="/contact/" class="btn-contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="page-hero__inner">
+      <nav class="breadcrumb">
+        <a href="/">Home</a><span class="breadcrumb__sep">·</span>
+        <span class="breadcrumb__current">Contact</span>
+      </nav>
+      <h1 class="page-hero__title">Contact SEMIAN.</h1>
+      <p class="page-hero__lead">
+        견적 문의, 데모 신청, 기술 지원 — 어떤 문의든 한국 내 엔지니어가 직접 응대합니다.
+        평일 09:00–18:00, 영업일 기준 24시간 내 회신.
+      </p>
+    </div>
+  </section>
+
+  <!-- Form Tabs -->
+  <section class="section">
+    <div class="section__inner">
+      <div class="form-tabs">
+        <button class="form-tab is-active" data-tab="quote">Quote · 견적 문의</button>
+        <button class="form-tab" data-tab="demo">Demo · 데모 신청</button>
+        <button class="form-tab" data-tab="support">Support · 기술 지원</button>
+      </div>
+
+      <!-- Quote Form -->
+      <form class="form" id="form-quote" action="#" method="POST">
+        <div class="form__grid">
+          <div class="form__field">
+            <label class="form__label">관심 제품</label>
+            <select class="form__select">
+              <option>모델 선택 또는 미정</option>
+              <optgroup label="Sputter Coaters">
+                <option>SMC-22TS</option>
+                <option>SMC-22TD</option>
+                <option>SMC-15S</option>
+                <option>SMC-10S</option>
+                <option>RS</option>
+                <option>RS-TF</option>
+              </optgroup>
+              <optgroup label="Carbon Coaters">
+                <option>SMC-15E</option>
+                <option>RS-Carbon</option>
+              </optgroup>
+              <optgroup label="Osmium Coaters">
+                <option>SOC-12F</option>
+                <option>SOC-12N</option>
+              </optgroup>
+              <optgroup label="Glow Discharge">
+                <option>SMC-10G</option>
+              </optgroup>
+            </select>
+          </div>
+          <div class="form__field">
+            <label class="form__label">응용 분야</label>
+            <select class="form__select">
+              <option>분야 선택</option>
+              <option>SEM Imaging</option>
+              <option>High-Resolution / FE-SEM</option>
+              <option>TEM &amp; Analytical (EDS·EBSD)</option>
+              <option>Surface Treatment</option>
+              <option>기타</option>
+            </select>
+          </div>
+          <div class="form__field">
+            <label class="form__label">소속 / 기관</label>
+            <input type="text" class="form__input" placeholder="예: KAIST 신소재공학과">
+          </div>
+          <div class="form__field">
+            <label class="form__label">이름</label>
+            <input type="text" class="form__input" placeholder="홍길동">
+          </div>
+          <div class="form__field">
+            <label class="form__label">이메일</label>
+            <input type="email" class="form__input" placeholder="you@example.com">
+          </div>
+          <div class="form__field">
+            <label class="form__label">연락처</label>
+            <input type="tel" class="form__input" placeholder="010-0000-0000">
+          </div>
+          <div class="form__field form__field--full">
+            <label class="form__label">문의 내용</label>
+            <textarea class="form__textarea" placeholder="예상 사용 빈도, 시료 종류, 예산 범위 등 알려주시면 더 정확한 견적을 안내해드립니다."></textarea>
+          </div>
+        </div>
+        <button type="submit" class="btn btn--primary form__submit">견적 요청 보내기</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Direct Contact -->
+  <section class="section section--soft">
+    <div class="section__inner">
+      <div class="section-head">
+        <h2 class="section-head__title">Direct Contact</h2>
+        <div class="section-head__meta">직접 연락도 가능합니다</div>
+      </div>
+      <div class="why-grid">
+        <div class="why-card" style="text-align: left;">
+          <div class="why-card__label" style="margin-bottom: 16px;">PHONE</div>
+          <div style="font-size: 22px; color: var(--c-text); font-weight: 500; letter-spacing: -0.3px; margin-bottom: 20px;">
+            <a href="tel:+82428611878">+82.42.861.1878</a>
+          </div>
+          <p class="why-card__body">평일 09:00 — 18:00 (KST)</p>
+        </div>
+        <div class="why-card" style="text-align: left;">
+          <div class="why-card__label" style="margin-bottom: 16px;">EMAIL</div>
+          <div style="font-size: 22px; color: var(--c-text); font-weight: 500; letter-spacing: -0.3px; margin-bottom: 20px;">
+            <a href="mailto:info@semian.co.kr">info@semian.co.kr</a>
+          </div>
+          <p class="why-card__body">영업일 기준 24시간 내 회신</p>
+        </div>
+        <div class="why-card" style="text-align: left;">
+          <div class="why-card__label" style="margin-bottom: 16px;">VISIT</div>
+          <div style="font-size: 18px; color: var(--c-text); font-weight: 500; letter-spacing: -0.2px; margin-bottom: 20px; line-height: 1.5;">
+            대전 유성구 대학로 99<br>
+            충남대 산학연 810호
+          </div>
+          <p class="why-card__body">사전 예약 후 방문 부탁드립니다</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="site-footer__grid">
+      <div class="site-footer__brand">
+        <img src="/assets/logo-white.svg" alt="SEMIAN" class="logo-mark logo-mark--white">
+        <address class="site-footer__address">
+          (주)세미안 / SEMIAN Co., Ltd.<br>
+          대전광역시 유성구 대학로 99<br>
+          충남대학교 산학연 교육연구관 810호<br><br>
+          +82.42.861.1878<br>
+          info@semian.co.kr
+        </address>
+      </div>
+      <div>
+        <div class="footer-col__head">PRODUCTS</div>
+        <ul class="footer-col">
+          <li><a href="/products/sputter/">Sputter Coaters</a></li>
+          <li><a href="/products/carbon/">Carbon Coaters</a></li>
+          <li><a href="/products/osmium/">Osmium Coaters</a></li>
+          <li><a href="/products/glow/">Glow Discharge</a></li>
+          <li><a href="/products/plasma/">Plasma Cleaners</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col__head">RESOURCES</div>
+        <ul class="footer-col">
+          <li><a href="/catalog/">Catalog</a></li>
+          <li><a href="/articles/">Articles</a></li>
+          <li><a href="/news/">News &amp; Events</a></li>
+          <li><a href="/applications/">Applications</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col__head">COMPANY</div>
+        <ul class="footer-col">
+          <li><a href="/about/">About</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <div>© 2020-2026 SEMIAN Co., Ltd.</div>
+      <div class="site-footer__legal"><span>KR | EN</span><span>Privacy</span><span>Terms</span></div>
+    </div>
+  </footer>
+
+</body>
+</html>
