@@ -5,7 +5,7 @@
     <path d="M48 53h36V43H60v-9.5h22.5v-10H60V18h24V8H48z"/>
     <path d="M93 53h11V24l9.5 19h7l9.5-19v29h11V8h-12.5l-11.5 23L116 8h-11.5z"/>
     <path d="M156 53h12V8h-12z"/>
-    <path fill-rule="evenodd" d="M180 53L197 8h6l17 45h-11l-3-11h-16l-3 11zM195.5 36h9l-4.5-21z"/>
+    <path fill-rule="evenodd" d="M180 53L197 8h6l17 45h-9l-3-11h-16l-3 11zM195.5 36h9l-4.5-21z"/>
     <path d="M226 53h11V25.5L253.5 53H264V8h-11v27L237.2 8H226z"/>
   </g>
   <rect x="3" y="76" width="262" height="1.4" fill="rgba(255,255,255,0.45)"/>
