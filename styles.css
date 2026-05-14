@@ -638,13 +638,7 @@ input, textarea, select { font: inherit; color: inherit; }
   background-position: center;
   overflow: hidden;
 }
-.category-card__visual--photo::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(10, 27, 46, 0.4) 0%, rgba(10, 27, 46, 0) 35%, rgba(10, 27, 46, 0) 65%, rgba(10, 27, 46, 0.55) 100%);
-  pointer-events: none;
-}
+/* 카테고리 카드 사진에 그라디언트 오버레이 없음 (J님 요청) */
 .category-card__visual--alt {
   background: linear-gradient(135deg, var(--c-navy) 0%, var(--c-navy-ocean) 100%);
 }
@@ -1011,18 +1005,18 @@ input, textarea, select { font: inherit; color: inherit; }
   box-shadow: 0 8px 24px rgba(10, 27, 46, 0.06);
 }
 .product-card__visual {
-  height: 240px;
+  height: 260px;
   background: var(--c-bg-soft);
   position: relative;
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .product-card__visual img {
-  max-width: 80%;
-  max-height: 80%;
-  object-fit: contain;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 .product-card__visual-placeholder {
   display: flex;
@@ -1045,6 +1039,7 @@ input, textarea, select { font: inherit; color: inherit; }
   position: absolute;
   top: 16px;
   left: 16px;
+  z-index: 2;
   font-size: 9px;
   color: var(--c-navy-mid);
   background: white;
