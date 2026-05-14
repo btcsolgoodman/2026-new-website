@@ -1,0 +1,54 @@
+{
+  "generatedAt": "2026-05-14T12:31:30.366Z",
+  "count": 3,
+  "items": [
+    {
+      "id": "360733b0-2aff-8160-a79a-d80810dbc71d",
+      "name": "[샘플] 삼성전기",
+      "status": "Draft",
+      "type": "Enterprise",
+      "country": "Korea",
+      "logo": null,
+      "website": null,
+      "productUsed": "",
+      "quote": {
+        "text": "",
+        "author": ""
+      },
+      "order": 1,
+      "showOnHomepage": true
+    },
+    {
+      "id": "360733b0-2aff-81cb-8c3e-fee3f33a8d1a",
+      "name": "[샘플] 한국기초과학지원연구원 KBSI",
+      "status": "Draft",
+      "type": "Research Institute",
+      "country": "Korea",
+      "logo": null,
+      "website": null,
+      "productUsed": "",
+      "quote": {
+        "text": "",
+        "author": ""
+      },
+      "order": 2,
+      "showOnHomepage": true
+    },
+    {
+      "id": "360733b0-2aff-8125-bed5-f4c9f3039deb",
+      "name": "[샘플] 충남대학교",
+      "status": "Draft",
+      "type": "University",
+      "country": "Korea",
+      "logo": null,
+      "website": null,
+      "productUsed": "",
+      "quote": {
+        "text": "",
+        "author": ""
+      },
+      "order": 3,
+      "showOnHomepage": false
+    }
+  ]
+}

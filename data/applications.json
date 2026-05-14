@@ -1,0 +1,84 @@
+{
+  "generatedAt": "2026-05-14T12:31:29.966Z",
+  "count": 4,
+  "items": [
+    {
+      "id": "360733b0-2aff-818a-a678-dc04b0c729d4",
+      "name": "SEM Imaging",
+      "slug": "sem-imaging",
+      "status": "Published",
+      "order": 1,
+      "tagline": "SEM 시료의 Charging 방지와 표면 관찰을 위한 전도성 코팅",
+      "heroLead": "SEM 시료의 Charging 방지와 명확한 표면 관찰을 위한 전도성 박막 코팅. 분석 목적과 배율에 맞춰 Pt·Cr·Au·Os 다양한 코팅 방식.",
+      "heroImage": null,
+      "challengeTitle": "코팅 없이는 보이지 않습니다.",
+      "challengeBody": "비전도성 시료는 SEM 전자빔 조사 시 표면 전하 축적으로 Charging 현상이 발생합니다.",
+      "body": "",
+      "recommendedProducts": [
+        "SMC-22TS",
+        "SMC-15S",
+        "SMC-10S",
+        "RS"
+      ],
+      "relatedApps": []
+    },
+    {
+      "id": "360733b0-2aff-813d-b817-e624c1cb2d6b",
+      "name": "High-Resolution",
+      "slug": "high-resolution",
+      "status": "Published",
+      "order": 2,
+      "tagline": "FE-SEM 한계 분해능을 위한 비정질 박막",
+      "heroLead": "오스뮴(Os)과 크롬(Cr)으로 10만 배 이상 배율에서도 입자가 보이지 않는 매끄러운 박막.",
+      "heroImage": null,
+      "challengeTitle": "코팅이 보이면 시료는 안 보입니다.",
+      "challengeBody": "FE-SEM 고배율에서 코팅 박막의 입자가 관찰되어 미세 구조 분석을 방해합니다.",
+      "body": "",
+      "recommendedProducts": [
+        "SOC-12F",
+        "SOC-12N",
+        "SMC-22TS",
+        "SMC-15S"
+      ],
+      "relatedApps": []
+    },
+    {
+      "id": "360733b0-2aff-81e5-8234-f534f54bc8e2",
+      "name": "TEM & Analytical",
+      "slug": "tem-analytical",
+      "status": "Published",
+      "order": 3,
+      "tagline": "EDS·EBSD·FIB 분석을 위한 카본 코팅",
+      "heroLead": "금속 코팅의 원소 간섭 없이 정량 분석 정확도와 미세 형상 보존을 동시에.",
+      "heroImage": null,
+      "challengeTitle": "",
+      "challengeBody": "",
+      "body": "",
+      "recommendedProducts": [
+        "SMC-15E",
+        "RS-Carbon",
+        "SMC-22TS",
+        "SOC-12F"
+      ],
+      "relatedApps": []
+    },
+    {
+      "id": "360733b0-2aff-8157-8272-da75f742180d",
+      "name": "Surface Treatment",
+      "slug": "surface-treatment",
+      "status": "Published",
+      "order": 4,
+      "tagline": "플라즈마 글로우 디스차지 친수성·소수성 변환",
+      "heroLead": "TEM 시료 분자 분산·부착 개선부터 기판 코팅 전 표면 활성화까지.",
+      "heroImage": null,
+      "challengeTitle": "",
+      "challengeBody": "",
+      "body": "",
+      "recommendedProducts": [
+        "SMC-10G",
+        "SOC-12F"
+      ],
+      "relatedApps": []
+    }
+  ]
+}

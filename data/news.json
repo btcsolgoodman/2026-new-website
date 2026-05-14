@@ -1,0 +1,32 @@
+{
+  "generatedAt": "2026-05-14T12:31:28.599Z",
+  "count": 2,
+  "items": [
+    {
+      "id": "360733b0-2aff-81c6-a5c6-d4b21d7aaaae",
+      "title": "[샘플] 2026 NanoKorea 전시 참가 안내",
+      "date": "2026-07-03",
+      "status": "Draft",
+      "category": "Press",
+      "summary": "SEMIAN이 2026 NanoKorea 전시에 신라인 RS 시리즈를 출품합니다.",
+      "body": "",
+      "coverImage": null,
+      "externalLink": null,
+      "featured": false,
+      "lastEdited": "2026-05-14T12:00:00.000Z"
+    },
+    {
+      "id": "360733b0-2aff-81b1-83ef-d8cef2d1448d",
+      "title": "[샘플] SEMIAN 2026 신웹사이트 오픈",
+      "date": "2026-05-14",
+      "status": "Draft",
+      "category": "Company",
+      "summary": "충남대 산학연 본사의 SEMIAN이 새 글로벌 웹사이트를 오픈합니다.",
+      "body": "이것은 샘플 뉴스입니다. 실제 작성 시 본문을 마크다운으로 입력하시면 됩니다.\n\n## 소제목 가능\n- 불릿\n- 리스트\n\n굵게, 기울임 등 표준 마크다운 지원.",
+      "coverImage": null,
+      "externalLink": null,
+      "featured": true,
+      "lastEdited": "2026-05-14T12:00:00.000Z"
+    }
+  ]
+}

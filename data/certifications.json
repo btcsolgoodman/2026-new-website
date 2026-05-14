@@ -1,0 +1,81 @@
+{
+  "generatedAt": "2026-05-14T12:31:30.839Z",
+  "count": 5,
+  "items": [
+    {
+      "id": "360733b0-2aff-812e-9e01-fac85c7d8346",
+      "name": "오스뮴 가스 누출 방지 장치 및 방법",
+      "status": "Published",
+      "type": "Patent",
+      "number": "KR 10-2096523",
+      "authority": "특허청",
+      "issueDate": null,
+      "expiryDate": null,
+      "description": "OsO₄ 가스 노출을 차단하는 5단계 안전 구조 — SOC-12F·SOC-12N 핵심 기술.",
+      "certificateImage": null,
+      "linkedProducts": [
+        "SOC-12F",
+        "SOC-12N"
+      ],
+      "order": 1
+    },
+    {
+      "id": "360733b0-2aff-8187-a909-c40da91c19c5",
+      "name": "이온스퍼터 자동 시료 교환장치",
+      "status": "Published",
+      "type": "Patent",
+      "number": "KR 10-2289120",
+      "authority": "특허청",
+      "issueDate": null,
+      "expiryDate": null,
+      "description": "흄 케이스 부압 유지하며 시료 교환을 완전 자동화 — SOC-12F 차별 기능.",
+      "certificateImage": null,
+      "linkedProducts": [
+        "SOC-12F"
+      ],
+      "order": 2
+    },
+    {
+      "id": "360733b0-2aff-81b4-9d7e-fb839508c0e1",
+      "name": "벤처기업확인",
+      "status": "Published",
+      "type": "Certification",
+      "number": "",
+      "authority": "중소벤처기업부",
+      "issueDate": null,
+      "expiryDate": null,
+      "description": "",
+      "certificateImage": null,
+      "linkedProducts": [],
+      "order": 3
+    },
+    {
+      "id": "360733b0-2aff-8127-8bb1-e6816eb493df",
+      "name": "KC 전자파인증",
+      "status": "Published",
+      "type": "Certification",
+      "number": "",
+      "authority": "국립전파연구원",
+      "issueDate": null,
+      "expiryDate": null,
+      "description": "",
+      "certificateImage": null,
+      "linkedProducts": [],
+      "order": 4
+    },
+    {
+      "id": "360733b0-2aff-81b0-b216-d09c701f55ca",
+      "name": "KBSI 패밀리기업",
+      "status": "Published",
+      "type": "Partnership",
+      "number": "",
+      "authority": "한국기초과학지원연구원",
+      "issueDate": null,
+      "expiryDate": null,
+      "description": "",
+      "certificateImage": null,
+      "linkedProducts": [],
+      "order": 5
+    }
+  ]
+}

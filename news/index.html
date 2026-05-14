@@ -31,22 +31,84 @@
     </div>
   </section>
 
+  <!-- News list (Notion CMS connected) -->
   <section class="section">
     <div class="section__inner">
-      <div style="max-width: 720px; margin: 0 auto; text-align: center; padding: 60px 0;">
-        <div style="font-size: 11px; color: var(--c-text-soft2); letter-spacing: 4px; font-weight: 600; margin-bottom: 24px;">CONTENT IN PREPARATION</div>
-        <h2 style="font-size: 32px; color: var(--c-text); font-weight: 500; line-height: 1.4; letter-spacing: -0.6px; margin-bottom: 24px;">상세 페이지 준비 중입니다.</h2>
-        <p style="font-size: 15px; color: var(--c-text-muted); line-height: 1.9; margin-bottom: 40px;">
-          자세한 정보는 곧 업데이트됩니다. 지금 필요하신 정보가 있으시면 아래로 직접 문의해주세요.<br>
-          영업일 기준 24시간 내 회신드립니다.
-        </p>
-        <div style="display: flex; gap: 24px; justify-content: center;">
-          <a href="/contact/" class="link-arrow-block">문의하기</a>
-          <a href="/catalog/" class="link-arrow-block">카탈로그 받기</a>
-        </div>
+      <div class="section-head">
+        <h2 class="section-head__title">최신 소식</h2>
+        <div class="section-head__meta" id="news-count">로딩 중...</div>
+      </div>
+      <div id="news-list" class="news-list" aria-live="polite">
+        <div class="news-loading">노션에서 최신 뉴스를 불러오는 중...</div>
+      </div>
+      <div id="news-empty" class="news-empty" hidden>
+        <div style="font-size: 11px; color: var(--c-text-soft2); letter-spacing: 4px; font-weight: 600; margin-bottom: 16px;">NO NEWS YET</div>
+        <h3 style="font-size: 22px; color: var(--c-text); font-weight: 500; margin-bottom: 16px;">아직 게재된 뉴스가 없습니다</h3>
+        <p style="font-size: 14px; color: var(--c-text-muted); line-height: 1.8;">곧 업데이트됩니다. 직접 문의를 원하시면 아래로 연락주세요.</p>
       </div>
     </div>
   </section>
+
+  <style>
+    .news-list { display: flex; flex-direction: column; gap: 32px; max-width: 880px; margin: 0 auto; }
+    .news-card { display: grid; grid-template-columns: 160px 1fr; gap: 32px; padding: 28px 0; border-bottom: 0.5px solid var(--c-border-mid); align-items: start; }
+    .news-card:last-child { border-bottom: none; }
+    .news-card__date { font-family: var(--f-mono), monospace; font-size: 12px; color: var(--c-text-soft); letter-spacing: 0.5px; padding-top: 4px; }
+    .news-card__date-day { display: block; font-size: 28px; font-weight: 500; color: var(--c-text); letter-spacing: -0.5px; margin-top: 4px; line-height: 1; }
+    .news-card__date-year { display: block; font-size: 11px; color: var(--c-text-soft2); letter-spacing: 1px; margin-top: 6px; }
+    .news-card__body { min-width: 0; }
+    .news-card__category { display: inline-block; font-size: 10px; letter-spacing: 2px; color: var(--c-navy-mid); font-weight: 600; margin-bottom: 12px; }
+    .news-card__title { font-size: 20px; color: var(--c-text); font-weight: 500; line-height: 1.4; letter-spacing: -0.3px; margin: 0 0 10px; }
+    .news-card__title a { color: inherit; text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.18s; }
+    .news-card__title a:hover { border-bottom-color: var(--c-navy-mid); }
+    .news-card__summary { font-size: 14px; color: var(--c-text-mid); line-height: 1.7; margin: 0; }
+    .news-card__featured { display: inline-block; font-size: 9px; color: var(--c-accent); letter-spacing: 2px; font-weight: 600; margin-left: 8px; }
+    .news-loading, .news-empty { text-align: center; padding: 60px 20px; color: var(--c-text-soft); }
+    @media (max-width: 768px) {
+      .news-card { grid-template-columns: 1fr; gap: 12px; }
+      .news-card__date-day { display: inline; font-size: 14px; }
+      .news-card__date-year { display: inline; }
+    }
+  </style>
+
+  <script>
+    (async function() {
+      const listEl = document.getElementById('news-list');
+      const countEl = document.getElementById('news-count');
+      const emptyEl = document.getElementById('news-empty');
+      try {
+        const r = await fetch('/data/news.json', { cache: 'no-store' });
+        if (!r.ok) throw new Error(r.statusText);
+        const { items = [] } = await r.json();
+        const published = items.filter(n => n.status === 'Published');
+        if (published.length === 0) {
+          listEl.hidden = true;
+          emptyEl.hidden = false;
+          countEl.textContent = '0건';
+          return;
+        }
+        countEl.textContent = `${published.length}건 게재`;
+        listEl.innerHTML = published.map(n => {
+          const d = n.date ? new Date(n.date) : null;
+          const dateLabel = d ? `<div class="news-card__date"><span class="news-card__date-day">${String(d.getMonth()+1).padStart(2,'0')}.${String(d.getDate()).padStart(2,'0')}</span><span class="news-card__date-year">${d.getFullYear()}</span></div>` : '<div class="news-card__date"></div>';
+          const cat = n.category ? `<span class="news-card__category">${n.category.toUpperCase()}</span>` : '';
+          const featured = n.featured ? `<span class="news-card__featured">★ FEATURED</span>` : '';
+          const title = n.externalLink
+            ? `<a href="${n.externalLink}" target="_blank" rel="noopener">${escapeHtml(n.title)}</a>`
+            : escapeHtml(n.title);
+          const summary = n.summary ? `<p class="news-card__summary">${escapeHtml(n.summary)}</p>` : '';
+          return `<article class="news-card">${dateLabel}<div class="news-card__body">${cat}${featured}<h3 class="news-card__title">${title}</h3>${summary}</div></article>`;
+        }).join('');
+      } catch (e) {
+        console.error('News fetch failed:', e);
+        listEl.hidden = true;
+        emptyEl.hidden = false;
+        emptyEl.querySelector('h3').textContent = '뉴스 로딩 실패';
+        emptyEl.querySelector('p').textContent = '잠시 후 다시 시도해주세요.';
+      }
+    })();
+    function escapeHtml(s) { return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+  </script>
 
   <section class="section--talk">
     <div class="talk__head">
