@@ -42,10 +42,25 @@
         트리플 옵션, 트리플 레이어 — 분석의 새로운 기준. Pt·Cr·C 3타겟을 도구 없이 자유 전환,
         SEM 이미징부터 다층 박막 증착까지 한 시스템에서 처리합니다.
       </p>
+      <div style="margin-top: 28px; display: flex; gap: 12px; flex-wrap: wrap;">
+        <a href="/contact/?type=quote&model=SMC-22TS" style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 22px; background: white; color: var(--c-navy-mid); font-size: 13px; font-weight: 500; letter-spacing: 0.3px; border-radius: 4px; text-decoration: none;">Request a Quote <span style="font-size: 16px;">→</span></a>
+        <a href="#features" style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 22px; background: rgba(255,255,255,0.1); color: white; font-size: 13px; font-weight: 500; letter-spacing: 0.3px; border-radius: 4px; text-decoration: none; backdrop-filter: blur(4px); border: 0.5px solid rgba(255,255,255,0.3);">See Features ↓</a>
+      </div>
     </div>
   </section>
 
-  <section class="section">
+  <nav class="product-tabs">
+    <div class="product-tabs__inner">
+      <a href="#overview" class="product-tabs__link is-active">Overview</a>
+      <a href="#impact" class="product-tabs__link">Impact</a>
+      <a href="#targets" class="product-tabs__link">Three Targets</a>
+      <a href="#features" class="product-tabs__link">Features</a>
+      <a href="#applications" class="product-tabs__link">Applications</a>
+      <a href="#specs" class="product-tabs__link">Specifications</a>
+    </div>
+  </nav>
+
+  <section class="section" id="overview">
     <div class="section__inner">
       <div class="spec-glance">
         <div class="spec-glance__item">
@@ -63,6 +78,37 @@
         <div class="spec-glance__item">
           <div class="spec-glance__label">TARGETS</div>
           <div class="spec-glance__value">Pt · Cr · C</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="impact" style="padding-top: 0;">
+    <div class="section__inner">
+      <div class="section-head">
+        <h2 class="section-head__title">Impact Numbers</h2>
+        <div class="section-head__meta">SEM·FE-SEM 분석 워크플로우 핵심 데이터</div>
+      </div>
+      <div class="impact-row">
+        <div class="impact-stat">
+          <div class="impact-stat__label">TARGETS</div>
+          <div class="impact-stat__value">3<sup>×1</sup></div>
+          <div class="impact-stat__context">Pt·Cr·C 한 시스템 · 도구 없이 즉시 전환</div>
+        </div>
+        <div class="impact-stat">
+          <div class="impact-stat__label">TILT ANGLE</div>
+          <div class="impact-stat__value">70<sup>°</sup></div>
+          <div class="impact-stat__context">3D 시료 각도 제어 (옵션)</div>
+        </div>
+        <div class="impact-stat">
+          <div class="impact-stat__label">WAFER COVERAGE</div>
+          <div class="impact-stat__value">Ø100<sup>mm</sup></div>
+          <div class="impact-stat__context">Planetary 회전 시 4인치 균일 박막</div>
+        </div>
+        <div class="impact-stat">
+          <div class="impact-stat__label">RESOLUTION</div>
+          <div class="impact-stat__value">100,000<sup>×</sup></div>
+          <div class="impact-stat__context">FE-SEM Cr 코팅 고분해능 박막</div>
         </div>
       </div>
     </div>
@@ -91,7 +137,7 @@
 
   <section class="section">
     <div class="section__inner">
-      <div class="section-head">
+      <div class="section-head" id="targets">
         <h2 class="section-head__title">Three Targets, One System</h2>
         <div class="section-head__meta">목적별 타겟 선택</div>
       </div>
@@ -117,7 +163,7 @@
 
   <section class="section section--soft">
     <div class="section__inner">
-      <div class="section-head">
+      <div class="section-head" id="features">
         <h2 class="section-head__title">Features</h2>
       </div>
 
@@ -163,7 +209,24 @@
     </div>
   </section>
 
-  <section class="section">
+  <!-- Researcher Quote placeholder -->
+  <section class="section--quote">
+    <div class="quote-card quote-card--placeholder">
+      <p class="quote-card__text">
+        "Pt·Cr·C 세 타겟을 한 시스템에서 운용하니 SEM 분석실 처리량이 눈에 띄게 늘었다.
+        예전엔 분석 종류별로 다른 코터를 옮겨다녔는데 이젠 그 시간이 사라졌다."
+      </p>
+      <div class="quote-card__attribution">
+        <div class="quote-card__avatar"></div>
+        <div>
+          <div class="quote-card__author">[연구자 이름 · 직책]</div>
+          <div class="quote-card__affiliation">[소속 기관 · SEMIAN SMC-22TS 사용자]</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="applications">
     <div class="section__inner">
       <div class="section-head">
         <h2 class="section-head__title">Applications</h2>
@@ -178,11 +241,16 @@
           <li>반도체 3D 디바이스·MEMS (Tilt-Rotation 옵션)</li>
           <li>4인치 웨이퍼 균일 박막 (Planetary 옵션)</li>
         </ul>
+        <div class="app-chips">
+          <a href="/applications/sem-imaging/" class="app-chip">SEM Imaging<span class="app-chip__arrow">→</span></a>
+          <a href="/applications/high-resolution/" class="app-chip">High-Resolution<span class="app-chip__arrow">→</span></a>
+          <a href="/applications/tem-analytical/" class="app-chip">TEM &amp; Analytical<span class="app-chip__arrow">→</span></a>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="section section--soft">
+  <section class="section section--soft" id="specs">
     <div class="section__inner">
       <div class="section-head">
         <h2 class="section-head__title">Specifications</h2>
@@ -318,7 +386,12 @@
     </div>
   </footer>
 
+  <a href="/contact/?type=quote&model=SMC-22TS" class="sticky-cta" id="sticky-cta">
+    Request a Quote <span class="sticky-cta__arrow">→</span>
+  </a>
+
   <script src="/assets/mega-menu.js" defer></script>
+  <script src="/assets/product-page.js" defer></script>
   <script src="/assets/tawk.js" async></script>
 </body>
 </html>

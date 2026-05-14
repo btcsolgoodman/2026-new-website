@@ -42,10 +42,27 @@
         흄 통합형 오스뮴 코터 — 다공성·복잡 구조 시료에 균일한 박막을 형성하면서 흄 시스템과
         자동 시료 교환까지 통합한 국내 전용 모델. 사용자가 어떠한 단계에서도 가스에 노출되지 않습니다.
       </p>
+      <div style="margin-top: 28px; display: flex; gap: 12px; flex-wrap: wrap;">
+        <a href="/contact/?type=quote&model=SOC-12F" style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 22px; background: white; color: var(--c-navy-mid); font-size: 13px; font-weight: 500; letter-spacing: 0.3px; border-radius: 4px; text-decoration: none;">Request a Quote <span style="font-size: 16px;">→</span></a>
+        <a href="#features" style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 22px; background: rgba(255,255,255,0.1); color: white; font-size: 13px; font-weight: 500; letter-spacing: 0.3px; border-radius: 4px; text-decoration: none; backdrop-filter: blur(4px); border: 0.5px solid rgba(255,255,255,0.3);">See Features ↓</a>
+      </div>
     </div>
   </section>
 
-  <section class="section">
+  <!-- Tab Navigation (Leica-style sticky) -->
+  <nav class="product-tabs">
+    <div class="product-tabs__inner">
+      <a href="#overview" class="product-tabs__link is-active">Overview</a>
+      <a href="#impact" class="product-tabs__link">Impact</a>
+      <a href="#features" class="product-tabs__link">Features</a>
+      <a href="#patents" class="product-tabs__link">Patents</a>
+      <a href="#specs" class="product-tabs__link">Specifications</a>
+      <a href="#applications" class="product-tabs__link">Applications</a>
+      <a href="#downloads" class="product-tabs__link">Downloads</a>
+    </div>
+  </nav>
+
+  <section class="section" id="overview">
     <div class="section__inner">
       <div class="spec-glance">
         <div class="spec-glance__item">
@@ -63,6 +80,38 @@
         <div class="spec-glance__item">
           <div class="spec-glance__label">PATENTS</div>
           <div class="spec-glance__value">2 KR</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Impact Stats — quantitative numbers (A) -->
+  <section class="section" id="impact" style="padding-top: 0;">
+    <div class="section__inner">
+      <div class="section-head">
+        <h2 class="section-head__title">Impact Numbers</h2>
+        <div class="section-head__meta">기존 금속 스퍼터링 대비 SOC-12F</div>
+      </div>
+      <div class="impact-row">
+        <div class="impact-stat">
+          <div class="impact-stat__label">RESOLUTION</div>
+          <div class="impact-stat__value">100,000<sup>×</sup></div>
+          <div class="impact-stat__context">FE-SEM 배율에서도 박막 입자 미관측 (비정질)</div>
+        </div>
+        <div class="impact-stat">
+          <div class="impact-stat__label">GAS EXPOSURE</div>
+          <div class="impact-stat__value">0<sup>ppm</sup></div>
+          <div class="impact-stat__context">사용자 오스뮴 노출 — 4중 차단 + 부압 유지</div>
+        </div>
+        <div class="impact-stat">
+          <div class="impact-stat__label">PULSE TIMING</div>
+          <div class="impact-stat__value">0.5s<sup>×3</sup></div>
+          <div class="impact-stat__context">Flash Mode — 가스 소비량 최소화</div>
+        </div>
+        <div class="impact-stat">
+          <div class="impact-stat__label">SAFETY LAYERS</div>
+          <div class="impact-stat__value">5</div>
+          <div class="impact-stat__context">단계별 가스 트랩 (Flash → Aux → 활성탄 → HEPA)</div>
         </div>
       </div>
     </div>
@@ -90,7 +139,24 @@
     </div>
   </section>
 
-  <section class="section">
+  <!-- Researcher Quote (D — placeholder format) -->
+  <section class="section--quote">
+    <div class="quote-card quote-card--placeholder">
+      <p class="quote-card__text">
+        "오스뮴 코터 도입 후 FE-SEM 100,000× 관찰에서 박막 입자가 사라져 분석 결과를
+        그대로 논문에 사용할 수 있게 되었다. 가스 노출 우려 없이 운영진 누구나 사용할 수 있다."
+      </p>
+      <div class="quote-card__attribution">
+        <div class="quote-card__avatar"></div>
+        <div>
+          <div class="quote-card__author">[연구자 이름 · 직책]</div>
+          <div class="quote-card__affiliation">[소속 기관 · SEMIAN SOC-12F 사용자]</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="features">
     <div class="section__inner">
       <div class="section-head">
         <h2 class="section-head__title">Features</h2>
@@ -141,10 +207,16 @@
       </div>
 
       <div class="feature-block">
-        <div class="feature-block__visual" style="background: var(--c-bg-soft);">
-          <div style="text-align: center; padding: 32px;">
-            <div style="font-family: var(--f-mono); font-size: 36px; color: var(--c-navy-mid); font-weight: 500; letter-spacing: -1px;">0.5s × 3</div>
-            <div style="font-size: 11px; color: var(--c-text-soft); letter-spacing: 2px; margin-top: 12px;">FLASH PULSE TIMING</div>
+        <div>
+          <div class="feature-block__visual" style="background-image: url('/assets/samples/amyloid-coated.jpg'); background-size: cover; background-position: center; min-height: 280px;"></div>
+          <div class="image-caption">
+            <span class="image-caption__sample">아밀로이드 fibril · OsO₄ 비정질 박막 코팅</span>
+            <div class="image-caption__meta">
+              <span>SEM</span>
+              <span>50,000×</span>
+              <span>biological sample</span>
+              <span>SOC-12F · Flash Mode</span>
+            </div>
           </div>
         </div>
         <div>
@@ -200,7 +272,7 @@
     </div>
   </section>
 
-  <section class="section section--soft">
+  <section class="section section--soft" id="patents">
     <div class="section__inner">
       <div class="section-head">
         <h2 class="section-head__title">Patents</h2>
@@ -270,11 +342,11 @@
     </div>
   </section>
 
-  <section class="section">
+  <section class="section" id="applications">
     <div class="section__inner">
       <div class="section-head">
         <h2 class="section-head__title">Applications</h2>
-        <div class="section-head__meta">사용 분야</div>
+        <div class="section-head__meta">사용 분야 · 응용별 가이드로 이동</div>
       </div>
       <div style="max-width: 880px; margin: 0 auto;">
         <ul class="feature-block__list" style="font-size: 16px;">
@@ -284,11 +356,16 @@
           <li>TEM 시료 친수성·소수성 표면 처리 (Glow Discharge 통합)</li>
           <li>안전 규제가 까다로운 학내·기업 분석실</li>
         </ul>
+        <div class="app-chips">
+          <a href="/applications/high-resolution/" class="app-chip">High-Resolution<span class="app-chip__arrow">→</span></a>
+          <a href="/applications/tem-analytical/" class="app-chip">TEM &amp; Analytical<span class="app-chip__arrow">→</span></a>
+          <a href="/applications/surface-treatment/" class="app-chip">Surface Treatment<span class="app-chip__arrow">→</span></a>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="section section--soft">
+  <section class="section section--soft" id="specs">
     <div class="section__inner">
       <div class="section-head">
         <h2 class="section-head__title">Specifications</h2>
@@ -314,7 +391,42 @@
     </div>
   </section>
 
-  <section class="section">
+  <section class="section" id="downloads">
+    <div class="section__inner">
+      <div class="section-head">
+        <h2 class="section-head__title">Downloads</h2>
+        <div class="section-head__meta">제품 자료 · PDF</div>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; max-width: var(--max-w); margin: 0 auto;">
+        <a href="/catalog/SOC-12F-brochure-KOR.pdf" class="cert-card" download style="text-align: left;">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
+            <span style="font-size: 11px; color: var(--c-text-soft); letter-spacing: 2px; font-weight: 600;">BROCHURE · KOR</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="color: var(--c-navy-mid);"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          </div>
+          <div style="font-size: 15px; color: var(--c-text); font-weight: 500; letter-spacing: -0.2px;">SOC-12F 한글 브로슈어</div>
+          <div style="font-size: 11px; color: var(--c-text-soft); margin-top: 6px; font-family: var(--f-mono);">PDF · 준비 중</div>
+        </a>
+        <a href="/catalog/SOC-12F-brochure-ENG.pdf" class="cert-card" download style="text-align: left;">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
+            <span style="font-size: 11px; color: var(--c-text-soft); letter-spacing: 2px; font-weight: 600;">BROCHURE · ENG</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="color: var(--c-navy-mid);"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          </div>
+          <div style="font-size: 15px; color: var(--c-text); font-weight: 500; letter-spacing: -0.2px;">SOC-12F English Brochure</div>
+          <div style="font-size: 11px; color: var(--c-text-soft); margin-top: 6px; font-family: var(--f-mono);">PDF · Coming soon</div>
+        </a>
+        <a href="/catalog/SOC-12F-spec-sheet.pdf" class="cert-card" download style="text-align: left;">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
+            <span style="font-size: 11px; color: var(--c-text-soft); letter-spacing: 2px; font-weight: 600;">SPEC SHEET</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="color: var(--c-navy-mid);"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          </div>
+          <div style="font-size: 15px; color: var(--c-text); font-weight: 500; letter-spacing: -0.2px;">1-pager 사양서</div>
+          <div style="font-size: 11px; color: var(--c-text-soft); margin-top: 6px; font-family: var(--f-mono);">PDF · 준비 중</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--soft">
     <div class="section__inner">
       <div class="section-head">
         <h2 class="section-head__title">Related Products</h2>
@@ -422,7 +534,13 @@
     </div>
   </footer>
 
+  <!-- Sticky CTA (C) — appears after scrolling past hero -->
+  <a href="/contact/?type=quote&model=SOC-12F" class="sticky-cta" id="sticky-cta">
+    Request a Quote <span class="sticky-cta__arrow">→</span>
+  </a>
+
   <script src="/assets/mega-menu.js" defer></script>
+  <script src="/assets/product-page.js" defer></script>
   <script src="/assets/tawk.js" async></script>
 </body>
 </html>
