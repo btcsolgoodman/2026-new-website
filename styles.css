@@ -231,7 +231,7 @@ input, textarea, select { font: inherit; color: inherit; }
    ============================================================ */
 .hero {
   position: relative;
-  min-height: 940px;
+  min-height: 1040px;
   overflow: hidden;
   background: white;
 }
@@ -406,12 +406,12 @@ input, textarea, select { font: inherit; color: inherit; }
   inset: 0;
 }
 
-/* Overlap cards — 히어로 위로 올라오는 4 카드 */
+/* Overlap cards — 3 카드, 히어로 위로 침범 */
 .overlap-cards {
   position: relative;
   z-index: 5;
-  margin-top: -260px;
-  margin-bottom: 80px;
+  margin-top: -280px;
+  margin-bottom: 100px;
   padding: 0 var(--side-pad);
   max-width: var(--max-w);
   margin-left: auto;
@@ -419,64 +419,79 @@ input, textarea, select { font: inherit; color: inherit; }
 }
 .overlap-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 .overlap-card {
-  background: rgba(255, 255, 255, 0.92);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border-radius: var(--r-card);
-  padding: 32px 28px 30px;
-  box-shadow: 0 6px 24px rgba(10, 27, 46, 0.04);
+  padding: 44px 38px 36px;
+  box-shadow: 0 8px 28px rgba(10, 27, 46, 0.05);
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+  min-height: 280px;
 }
 .overlap-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 32px rgba(10, 27, 46, 0.06);
+  transform: translateY(-4px);
+  box-shadow: 0 18px 48px rgba(10, 27, 46, 0.09);
 }
-.overlap-card__num {
-  font-size: 42px;
+.overlap-card__big {
+  font-size: 56px;
   color: var(--c-navy-mid);
   font-weight: 500;
-  letter-spacing: -1px;
+  letter-spacing: -1.5px;
   line-height: 1;
-  display: flex;
-  align-items: baseline;
-  gap: 4px;
+  margin-bottom: 6px;
 }
-.overlap-card__num small {
-  font-size: 18px;
-  color: var(--c-text-muted);
-  font-weight: 500;
-}
-.overlap-card__label {
+.overlap-card__heading {
   font-size: 10px;
   color: var(--c-text-soft);
-  letter-spacing: 2.5px;
+  letter-spacing: 3px;
   font-weight: 600;
   text-transform: uppercase;
-  margin-top: 6px;
+  margin-bottom: 6px;
 }
 .overlap-card__body {
-  font-size: 13px;
-  color: var(--c-text-muted);
-  line-height: 1.7;
-  margin-top: 4px;
+  font-size: 14px;
+  color: var(--c-text-mid);
+  line-height: 1.85;
+  letter-spacing: 0.1px;
+  flex: 1;
+}
+.overlap-card__link {
+  font-size: 12px;
+  color: var(--c-navy-mid);
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  padding-top: 16px;
+  border-top: 0.5px solid var(--c-border-mid);
+}
+.overlap-card__link::after {
+  content: '→';
+  transition: transform 0.2s;
+}
+.overlap-card:hover .overlap-card__link::after {
+  transform: translateX(4px);
 }
 
 @media (max-width: 1200px) {
-  .overlap-cards { margin-top: -80px; }
-  .overlap-grid { grid-template-columns: repeat(2, 1fr); }
+  .overlap-cards { margin-top: -180px; }
+  .overlap-grid { grid-template-columns: 1fr; gap: 16px; }
 }
 @media (max-width: 768px) {
-  .overlap-cards { margin-top: -40px; padding: 0 20px; }
-  .overlap-grid { grid-template-columns: 1fr; gap: 12px; }
-  .overlap-card { padding: 24px; }
-  .overlap-card__num { font-size: 32px; }
+  .overlap-cards { margin-top: -80px; padding: 0 20px; }
+  .overlap-card { padding: 32px 28px; min-height: auto; }
+  .overlap-card__big { font-size: 42px; }
 }
 
 /* ============================================================
