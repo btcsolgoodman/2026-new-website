@@ -231,7 +231,7 @@ input, textarea, select { font: inherit; color: inherit; }
    ============================================================ */
 .hero {
   position: relative;
-  min-height: 1040px;
+  min-height: 1180px;
   overflow: hidden;
   background: white;
 }
@@ -260,9 +260,9 @@ input, textarea, select { font: inherit; color: inherit; }
   inset: 0;
   z-index: 1;
   background:
-    radial-gradient(ellipse at 30% 40%, rgba(255, 255, 255, 0.4) 0%, transparent 50%),
+    radial-gradient(ellipse at 30% 38%, rgba(255, 255, 255, 0.4) 0%, transparent 50%),
     linear-gradient(90deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.32) 25%, rgba(255, 255, 255, 0.1) 50%, transparent 72%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.12) 10%, transparent 22%, rgba(255, 255, 255, 0.25) 40%, rgba(255, 255, 255, 0.7) 58%, rgba(255, 255, 255, 0.98) 70%, white 75%, white 100%);
+    linear-gradient(180deg, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.12) 10%, transparent 22%, rgba(255, 255, 255, 0.15) 45%, rgba(255, 255, 255, 0.55) 65%, rgba(255, 255, 255, 0.9) 78%, white 85%, white 100%);
   pointer-events: none;
 }
 .hero__inner {
@@ -410,7 +410,7 @@ input, textarea, select { font: inherit; color: inherit; }
 .overlap-cards {
   position: relative;
   z-index: 5;
-  margin-top: -280px;
+  margin-top: -400px;
   margin-bottom: 100px;
   padding: 0 var(--side-pad);
   max-width: var(--max-w);
