@@ -1,0 +1,15 @@
+.git
+.git/**
+node_modules
+node_modules/**
+.claude
+.claude/**
+*.md
+README.md
+_HANDOFF_to_ClaudeCode.md
+.gitignore
+.assetsignore
+website-backup
+website-backup/**
+0_미리보기.bat
+1_deploy.bat
