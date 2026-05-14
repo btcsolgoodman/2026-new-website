@@ -14,13 +14,49 @@ var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
 /* Tawk attention bubble은 iframe이 아니라 div로 추가되며 inline style로 강제됨.
    div ID 패턴 (예: aclp7oj6424c1778725184889) 도 같이 차단. */
 
+function isMainChatWidget(node) {
+  // main chat widget은 iframe[src*="tawk"] 포함하는 컨테이너
+  // (채팅 아이콘 + 열린 채팅창 둘 다 main으로 간주)
+  if (!node || !node.querySelectorAll) return false;
+  var iframes = node.querySelectorAll('iframe');
+  for (var i = 0; i < iframes.length; i++) {
+    var f = iframes[i];
+    var src = (f.src || '').toLowerCase();
+    var title = (f.title || '').toLowerCase();
+    if (src.indexOf('tawk.to') > -1) {
+      // 명확히 main widget 또는 chat widget이라고 표시된 경우
+      if (title === 'chat widget' ||
+          title === 'tawk.to' ||
+          title === 'chat now' ||
+          (title.indexOf('chat') > -1 &&
+           title.indexOf('bubble') === -1 &&
+           title.indexOf('attention') === -1 &&
+           title.indexOf('grabber') === -1)) {
+        return true;
+      }
+    }
+  }
+  return false;
+}
+
 function tawkHideMatch(node) {
   if (!node || node.nodeType !== 1) return false;
   var id = node.id || '';
   var tag = node.tagName;
 
-  // 1. Tawk.to 무작위 ID 패턴 (aclp로 시작 + 알파숫자) — div도 잡힘
-  if (/^aclp[a-z0-9]+$/i.test(id)) return true;
+  // 1. body 직속 div + 무작위 ID 패턴 (Tawk이 추가한 attention 컨테이너)
+  //    매 세션마다 다른 ID: aclp7oj6..., b4u8da4v..., 등
+  //    공통 패턴: 알파숫자 혼합 15자 이상
+  if (tag === 'DIV') {
+    var isRandomId = /^[a-z0-9]{15,}$/i.test(id) &&
+                     /[a-z]/i.test(id) &&
+                     /[0-9]/.test(id);
+    if (isRandomId && node.parentNode === document.body) {
+      // main chat widget(아이콘 + 채팅창)이면 보호
+      if (isMainChatWidget(node)) return false;
+      return true;
+    }
+  }
 
   // 2. iframe — title / src 키워드
   if (tag === 'IFRAME') {
@@ -39,7 +75,7 @@ function tawkHideMatch(node) {
     ) return true;
   }
 
-  // 3. div 내부 텍스트 검사 — "We are here" 등
+  // 3. div 내부 텍스트 검사 — 보조
   if (tag === 'DIV') {
     var html = (node.innerHTML || '').toLowerCase();
     if (
