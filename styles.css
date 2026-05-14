@@ -249,6 +249,14 @@ input, textarea, select { font: inherit; color: inherit; }
   object-fit: cover;
   object-position: center;
 }
+.hero__media video {
+  animation: heroKenBurns 32s ease-in-out infinite alternate;
+  transform-origin: center center;
+}
+@keyframes heroKenBurns {
+  from { transform: scale(1); }
+  to { transform: scale(1.08); }
+}
 .hero__overlay {
   position: absolute;
   inset: 0;
