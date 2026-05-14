@@ -2371,7 +2371,7 @@ input, textarea, select { font: inherit; color: inherit; }
 .sticky-cta {
   position: fixed;
   right: 24px;
-  bottom: 24px;
+  bottom: 96px;        /* Above Tawk.to chat bubble (which sits ~bottom 20px, ~60px tall) */
   z-index: 50;
   display: inline-flex;
   align-items: center;
