@@ -254,6 +254,7 @@ input, textarea, select { font: inherit; color: inherit; }
   inset: 0;
   z-index: 1;
   background:
+    radial-gradient(ellipse at 50% 50%, transparent 45%, rgba(5, 8, 19, 0.35) 100%),
     linear-gradient(90deg, rgba(5, 8, 19, 0.78) 0%, rgba(5, 8, 19, 0.55) 30%, rgba(5, 8, 19, 0.15) 55%, rgba(5, 8, 19, 0) 75%),
     linear-gradient(180deg, rgba(5, 8, 19, 0.3) 0%, transparent 30%, transparent 70%, rgba(5, 8, 19, 0.5) 100%);
   pointer-events: none;
