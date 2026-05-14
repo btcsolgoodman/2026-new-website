@@ -78,10 +78,9 @@ input, textarea, select { font: inherit; color: inherit; }
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(255, 255, 255, 0.94);
+  background: rgba(255, 255, 255, 0.85);
   backdrop-filter: saturate(180%) blur(14px);
   -webkit-backdrop-filter: saturate(180%) blur(14px);
-  border-bottom: 0.5px solid var(--c-border);
 }
 .site-header__inner {
   max-width: var(--max-w);
@@ -261,9 +260,9 @@ input, textarea, select { font: inherit; color: inherit; }
   inset: 0;
   z-index: 1;
   background:
-    radial-gradient(ellipse at 50% 50%, transparent 45%, rgba(5, 8, 19, 0.18) 100%),
-    linear-gradient(90deg, rgba(5, 8, 19, 0.55) 0%, rgba(5, 8, 19, 0.3) 30%, rgba(5, 8, 19, 0.05) 55%, rgba(5, 8, 19, 0) 75%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, transparent 18%, transparent 38%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0.6) 75%, rgba(255, 255, 255, 0.92) 90%, rgba(255, 255, 255, 1) 100%);
+    radial-gradient(ellipse at 30% 50%, rgba(255, 255, 255, 0.35) 0%, transparent 55%),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0.08) 50%, transparent 70%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 15%, transparent 30%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.5) 70%, rgba(255, 255, 255, 0.9) 88%, rgba(255, 255, 255, 1) 100%);
   pointer-events: none;
 }
 .hero__inner {
@@ -282,7 +281,7 @@ input, textarea, select { font: inherit; color: inherit; }
 }
 .hero__eyebrow {
   font-size: 11px;
-  color: var(--c-ice);
+  color: var(--c-navy-mid);
   letter-spacing: 8px;
   font-weight: 600;
   margin-bottom: 48px;
@@ -290,7 +289,7 @@ input, textarea, select { font: inherit; color: inherit; }
 }
 .hero__title {
   font-size: 64px;
-  color: white;
+  color: var(--c-text);
   font-weight: 500;
   line-height: 1.4;
   letter-spacing: -1.6px;
@@ -298,7 +297,7 @@ input, textarea, select { font: inherit; color: inherit; }
 }
 .hero__body {
   font-size: 16px;
-  color: rgba(255, 255, 255, 0.78);
+  color: var(--c-text-mid);
   line-height: 2.05;
   max-width: 480px;
   margin-bottom: 48px;
@@ -306,12 +305,12 @@ input, textarea, select { font: inherit; color: inherit; }
 }
 .hero__actions { display: flex; gap: 28px; align-items: center; }
 .hero__actions .link-arrow-block {
-  color: white;
-  border-color: rgba(255, 255, 255, 0.7);
+  color: var(--c-text);
+  border-color: var(--c-text);
 }
 .hero__actions .link-arrow-block:hover {
-  color: var(--c-ice);
-  border-color: var(--c-ice);
+  color: var(--c-navy-mid);
+  border-color: var(--c-navy-mid);
 }
 .hero__media-label {
   position: absolute;
@@ -424,19 +423,20 @@ input, textarea, select { font: inherit; color: inherit; }
   gap: 16px;
 }
 .overlap-card {
-  background: white;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   border-radius: var(--r-card);
   padding: 32px 28px 30px;
-  box-shadow: 0 12px 40px rgba(10, 27, 46, 0.08), 0 2px 6px rgba(10, 27, 46, 0.04);
+  box-shadow: 0 6px 24px rgba(10, 27, 46, 0.04);
   display: flex;
   flex-direction: column;
   gap: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 0.5px solid var(--c-border);
 }
 .overlap-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 16px 48px rgba(10, 27, 46, 0.1), 0 4px 8px rgba(10, 27, 46, 0.05);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(10, 27, 46, 0.06);
 }
 .overlap-card__num {
   font-size: 42px;
