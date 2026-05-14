@@ -47,8 +47,36 @@
   --r-pill: 999px;
 
   /* Layout */
-  --max-w: 1328px;
-  --side-pad: 56px;
+  --max-w: 1240px;
+  --max-w-content: 880px;
+  --side-pad: 40px;
+
+  /* Type scale — refined v3 (Leica-class precision) */
+  --t-h1: 44px;       /* hero title */
+  --t-h2: 28px;       /* section title */
+  --t-h3: 18px;       /* sub-feature */
+  --t-h4: 15px;       /* feature item */
+  --t-body: 15px;
+  --t-body-sm: 13px;
+  --t-caption: 12px;
+  --t-eyebrow: 11px;
+  --t-mono: 11px;
+
+  /* Line heights */
+  --lh-display: 1.2;
+  --lh-heading: 1.3;
+  --lh-body: 1.7;
+  --lh-caption: 1.55;
+
+  /* Letter spacing */
+  --ls-display: -0.8px;
+  --ls-heading: -0.4px;
+  --ls-eyebrow: 2.4px;
+  --ls-button: 0.4px;
+
+  /* Accent — Leica-style inline link */
+  --c-accent: #C2362F;
+  --c-accent-hover: #9A2A24;
 }
 
 /* ---------- Reset ---------- */
@@ -498,7 +526,7 @@ input, textarea, select { font: inherit; color: inherit; }
    PAGE HERO (subpages)
    ============================================================ */
 .page-hero {
-  padding: 100px var(--side-pad) 80px;
+  padding: 88px var(--side-pad) 64px;
   max-width: var(--max-w);
   margin: 0 auto;
 }
@@ -507,7 +535,7 @@ input, textarea, select { font: inherit; color: inherit; }
 /* Page hero with full-bleed media background (sub-page heroes) */
 .page-hero--media {
   position: relative;
-  min-height: 440px;
+  min-height: 420px;
   overflow: hidden;
   background: linear-gradient(135deg, var(--c-navy-deepest) 0%, var(--c-navy) 55%, var(--c-navy-ocean) 100%);
   background-size: cover;
@@ -528,16 +556,14 @@ input, textarea, select { font: inherit; color: inherit; }
   z-index: 2;
   max-width: var(--max-w);
   margin: 0 auto;
-  padding: 100px var(--side-pad) 80px;
-  min-height: 440px;
+  padding: 88px var(--side-pad) 72px;
+  min-height: 420px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .page-hero--media .breadcrumb,
-.page-hero--media .breadcrumb a {
-  color: rgba(255, 255, 255, 0.65);
-}
+.page-hero--media .breadcrumb a { color: rgba(255, 255, 255, 0.65); }
 .page-hero--media .breadcrumb a:hover { color: white; }
 .page-hero--media .breadcrumb__current { color: rgba(255, 255, 255, 0.95); }
 .page-hero--media .breadcrumb__sep { color: rgba(255, 255, 255, 0.35); }
@@ -547,21 +573,21 @@ input, textarea, select { font: inherit; color: inherit; }
   .page-hero--media { min-height: 320px; }
   .page-hero--media .page-hero__inner {
     min-height: 320px;
-    padding: 64px 20px 48px;
+    padding: 56px 20px 44px;
   }
 }
 .page-hero__title {
-  font-size: 56px;
+  font-size: var(--t-h1);
   color: var(--c-text);
   font-weight: 500;
-  line-height: 1.35;
-  letter-spacing: -1.4px;
-  margin: 36px 0 28px;
+  line-height: var(--lh-display);
+  letter-spacing: var(--ls-display);
+  margin: 24px 0 20px;
 }
 .page-hero__lead {
-  font-size: 18px;
+  font-size: 16px;
   color: var(--c-text-muted);
-  line-height: 1.85;
+  line-height: 1.65;
   max-width: 620px;
 }
 
@@ -583,7 +609,7 @@ input, textarea, select { font: inherit; color: inherit; }
    SECTION SHARED
    ============================================================ */
 .section {
-  padding: 140px var(--side-pad);
+  padding: 96px var(--side-pad);
   max-width: var(--max-w);
   margin: 0 auto;
 }
@@ -602,38 +628,38 @@ input, textarea, select { font: inherit; color: inherit; }
 }
 
 .eyebrow {
-  font-size: 10px;
+  font-size: var(--t-eyebrow);
   color: var(--c-text-soft2);
-  letter-spacing: 7px;
-  font-weight: 500;
-  margin-bottom: 28px;
+  letter-spacing: var(--ls-eyebrow);
+  font-weight: 600;
+  margin-bottom: 16px;
   text-transform: uppercase;
 }
 .eyebrow--brand { color: var(--c-navy-mid); }
 .eyebrow--white { color: rgba(255, 255, 255, 0.6); }
 
 .section-head {
-  margin-bottom: 64px;
+  margin-bottom: 48px;
   max-width: var(--max-w);
   margin-left: auto;
   margin-right: auto;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  gap: 40px;
+  gap: 32px;
 }
 .section-head__title {
-  font-size: 36px;
+  font-size: var(--t-h2);
   font-weight: 500;
-  letter-spacing: -0.6px;
-  line-height: 1.4;
+  letter-spacing: var(--ls-heading);
+  line-height: var(--lh-heading);
   color: var(--c-text);
 }
 .section-head--dark .section-head__title { color: white; }
 .section-head__meta {
-  font-size: 12px;
+  font-size: var(--t-caption);
   color: var(--c-text-soft);
-  letter-spacing: 0.5px;
+  letter-spacing: 0.2px;
 }
 .section-head--dark .section-head__meta { color: rgba(255, 255, 255, 0.5); }
 
@@ -641,31 +667,31 @@ input, textarea, select { font: inherit; color: inherit; }
    PHILOSOPHY (refined copy)
    ============================================================ */
 .section--philosophy {
-  padding: 160px var(--side-pad);
+  padding: 96px var(--side-pad);
 }
 .philosophy__grid {
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  gap: 120px;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 80px;
   align-items: start;
   max-width: var(--max-w);
   margin: 0 auto;
 }
 .philosophy__title {
-  font-size: 42px;
+  font-size: 32px;
   color: var(--c-text);
   font-weight: 500;
-  line-height: 1.45;
-  letter-spacing: -0.6px;
+  line-height: 1.3;
+  letter-spacing: -0.5px;
 }
 .philosophy__body {
-  font-size: 16px;
+  font-size: var(--t-body);
   color: var(--c-text-mid);
-  line-height: 2.15;
-  letter-spacing: 0.1px;
-  padding-top: 22px;
+  line-height: var(--lh-body);
+  letter-spacing: 0;
+  padding-top: 8px;
 }
-.philosophy__body p + p { margin-top: 28px; }
+.philosophy__body p + p { margin-top: 20px; }
 
 /* ============================================================
    CATEGORY GRID — Products by Technology (5)
@@ -1508,21 +1534,20 @@ input, textarea, select { font: inherit; color: inherit; }
   margin: 0 auto;
   border-collapse: collapse;
 }
-.spec-table tr {
-  border-bottom: 0.5px solid var(--c-border-mid);
-}
+.spec-table tr { border-bottom: 0.5px solid var(--c-border-mid); }
 .spec-table tr:last-child { border-bottom: none; }
 .spec-table th,
 .spec-table td {
-  padding: 20px 16px;
+  padding: 16px 12px;
   text-align: left;
-  font-size: 13px;
+  font-size: var(--t-body-sm);
   vertical-align: top;
+  line-height: 1.55;
 }
 .spec-table th {
   color: var(--c-text-soft);
   font-weight: 500;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.2px;
   width: 30%;
 }
 .spec-table td {
@@ -1534,23 +1559,22 @@ input, textarea, select { font: inherit; color: inherit; }
 .spec-glance {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
+  gap: 16px;
   max-width: var(--max-w);
   margin: 0 auto;
-  padding: 56px 0;
+  padding: 44px 0;
   border-top: 0.5px solid var(--c-border-mid);
   border-bottom: 0.5px solid var(--c-border-mid);
 }
-.spec-glance__item {}
 .spec-glance__label {
   font-size: 10px;
   color: var(--c-text-soft);
   letter-spacing: 2px;
-  margin-bottom: 12px;
-  font-weight: 500;
+  margin-bottom: 8px;
+  font-weight: 600;
 }
 .spec-glance__value {
-  font-size: 22px;
+  font-size: 20px;
   color: var(--c-text);
   font-weight: 500;
   letter-spacing: -0.3px;
@@ -1563,10 +1587,10 @@ input, textarea, select { font: inherit; color: inherit; }
 .feature-block {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 80px;
+  gap: 64px;
   align-items: center;
   max-width: var(--max-w);
-  margin: 0 auto 100px;
+  margin: 0 auto 72px;
 }
 .feature-block:last-child { margin-bottom: 0; }
 .feature-block--reverse { direction: rtl; }
@@ -1574,7 +1598,7 @@ input, textarea, select { font: inherit; color: inherit; }
 .feature-block__visual {
   background: var(--c-bg-soft);
   border-radius: var(--r-card);
-  height: 380px;
+  aspect-ratio: 4/3;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1588,19 +1612,19 @@ input, textarea, select { font: inherit; color: inherit; }
   background: linear-gradient(135deg, var(--c-border-mid) 0%, var(--c-border-strong) 100%);
 }
 .feature-block__eyebrow {
-  font-size: 10px;
+  font-size: var(--t-eyebrow);
   color: var(--c-navy-mid);
-  letter-spacing: 5px;
-  font-weight: 500;
-  margin-bottom: 20px;
+  letter-spacing: var(--ls-eyebrow);
+  font-weight: 600;
+  margin-bottom: 16px;
 }
 .feature-block__title {
-  font-size: 32px;
+  font-size: 26px;
   color: var(--c-text);
   font-weight: 500;
-  line-height: 1.4;
+  line-height: 1.3;
   letter-spacing: -0.4px;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 .feature-block__body {
   font-size: 15px;
@@ -2524,4 +2548,310 @@ input, textarea, select { font: inherit; color: inherit; }
   .spec-glance { grid-template-columns: 1fr 1fr; }
   .site-footer__grid { grid-template-columns: 1fr 1fr; gap: 32px; }
   .site-footer__bottom { flex-direction: column; gap: 12px; }
+}
+
+/* ============================================================
+   v3 — Premium Components (Leica-class precision)
+   ============================================================ */
+
+/* ---- Placeholder Visual — clean replacement for missing images ---- */
+.ph-visual {
+  position: relative;
+  aspect-ratio: 4/3;
+  background: linear-gradient(135deg, #F4F6F9 0%, #E9ECF1 100%);
+  border: 0.5px solid var(--c-border-mid);
+  border-radius: var(--r-card);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ph-visual::before {
+  content: '';
+  position: absolute;
+  inset: 24px;
+  border: 1px dashed rgba(43, 70, 112, 0.18);
+  border-radius: 2px;
+}
+.ph-visual__inner {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 32px;
+  max-width: 80%;
+}
+.ph-visual__label {
+  font-family: var(--f-mono), monospace;
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: var(--c-text-soft);
+  font-weight: 600;
+  margin-bottom: 12px;
+  display: block;
+}
+.ph-visual__caption {
+  font-size: 13px;
+  color: var(--c-text-mid);
+  line-height: 1.55;
+  letter-spacing: -0.1px;
+  margin-bottom: 12px;
+}
+.ph-visual__meta {
+  font-family: var(--f-mono), monospace;
+  font-size: 10px;
+  color: var(--c-text-soft2);
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+}
+.ph-visual--dark {
+  background: linear-gradient(135deg, var(--c-navy-deepest) 0%, var(--c-navy) 100%);
+  border-color: rgba(168, 197, 214, 0.15);
+}
+.ph-visual--dark::before { border-color: rgba(168, 197, 214, 0.18); }
+.ph-visual--dark .ph-visual__label { color: rgba(168, 197, 214, 0.6); }
+.ph-visual--dark .ph-visual__caption { color: rgba(255, 255, 255, 0.85); }
+.ph-visual--dark .ph-visual__meta { color: rgba(168, 197, 214, 0.5); }
+
+/* ---- Workflow Sidebar (Leica-style numbered nav + content) ---- */
+.workflow {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 80px;
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
+.workflow__sidebar {
+  position: sticky;
+  top: 120px;
+  align-self: start;
+}
+.workflow__label {
+  font-size: var(--t-eyebrow);
+  color: var(--c-text-soft2);
+  letter-spacing: var(--ls-eyebrow);
+  font-weight: 600;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--c-border-mid);
+}
+.workflow__list { list-style: none; margin: 0; padding: 0; }
+.workflow__step {
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  gap: 16px;
+  padding: 14px 0;
+  font-size: var(--t-body-sm);
+  color: var(--c-text-mid);
+  text-decoration: none;
+  border-bottom: 0.5px solid var(--c-border);
+  transition: color 0.18s;
+  cursor: pointer;
+}
+.workflow__step:hover { color: var(--c-text); }
+.workflow__step.is-active { color: var(--c-navy-mid); font-weight: 500; }
+.workflow__step-num {
+  font-family: var(--f-mono), monospace;
+  font-size: 11px;
+  color: var(--c-text-soft2);
+  letter-spacing: 0.5px;
+  padding-top: 2px;
+}
+.workflow__step.is-active .workflow__step-num { color: var(--c-navy-mid); }
+.workflow__content { min-width: 0; }
+.workflow__pane { display: none; }
+.workflow__pane.is-active { display: block; }
+.workflow__pane-title {
+  font-size: 24px;
+  color: var(--c-text);
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: -0.3px;
+  margin: 0 0 20px;
+}
+.workflow__pane-body {
+  font-size: var(--t-body);
+  color: var(--c-text-mid);
+  line-height: var(--lh-body);
+  margin-bottom: 24px;
+}
+
+/* ---- Inline Brand CTA (Leica-style red text link) ---- */
+.inline-cta {
+  color: var(--c-accent);
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.18s, color 0.18s;
+}
+.inline-cta:hover {
+  color: var(--c-accent-hover);
+  border-bottom-color: currentColor;
+}
+.inline-cta::after { content: ' →'; opacity: 0.7; }
+
+/* ---- Bullet list with brand red dots ---- */
+.brand-bullet {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.brand-bullet li {
+  position: relative;
+  padding: 8px 0 8px 22px;
+  font-size: var(--t-body);
+  color: var(--c-text-mid);
+  line-height: var(--lh-body);
+}
+.brand-bullet li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 16px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--c-accent);
+}
+
+/* ---- Triptych Composite Image (product + 2 samples) ---- */
+.triptych {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0;
+  max-width: var(--max-w);
+  margin: 48px auto 0;
+  border-radius: var(--r-card);
+  overflow: hidden;
+  background: var(--c-navy-deepest);
+}
+.triptych__cell {
+  aspect-ratio: 4/3;
+  position: relative;
+  border-right: 1px solid rgba(255, 255, 255, 0.04);
+  background-size: cover;
+  background-position: center;
+}
+.triptych__cell:last-child { border-right: none; }
+.triptych__cell--ph {
+  background: linear-gradient(135deg, var(--c-navy-deepest) 0%, var(--c-navy) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.triptych__cell--ph::before {
+  content: '';
+  position: absolute;
+  inset: 24px;
+  border: 1px dashed rgba(168, 197, 214, 0.18);
+}
+.triptych__cell-label {
+  position: relative;
+  z-index: 1;
+  font-family: var(--f-mono), monospace;
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: rgba(168, 197, 214, 0.55);
+  font-weight: 600;
+}
+
+/* ---- Similar Products Bar — DARK MODE at page bottom ---- */
+.similar-bar {
+  background: var(--c-navy-deepest);
+  padding: 64px var(--side-pad);
+}
+.similar-bar__inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
+.similar-bar__tabs {
+  display: flex;
+  gap: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  margin-bottom: 32px;
+}
+.similar-bar__tab {
+  flex-shrink: 0;
+  padding: 14px 24px;
+  font-size: var(--t-body-sm);
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: color 0.18s, border-color 0.18s;
+  cursor: pointer;
+  letter-spacing: 0.2px;
+}
+.similar-bar__tab:hover { color: rgba(255, 255, 255, 0.85); }
+.similar-bar__tab.is-active {
+  color: white;
+  border-bottom-color: white;
+  font-weight: 500;
+}
+.similar-bar__pane { display: none; }
+.similar-bar__pane.is-active { display: block; }
+.similar-bar__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.similar-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 0.5px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--r-card);
+  overflow: hidden;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  transition: background 0.18s, border-color 0.18s;
+}
+.similar-card:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+.similar-card__visual {
+  aspect-ratio: 5/3;
+  background: linear-gradient(135deg, var(--c-navy-darker) 0%, var(--c-navy) 100%);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.similar-card__visual::before {
+  content: '';
+  position: absolute;
+  inset: 16px;
+  border: 1px dashed rgba(168, 197, 214, 0.15);
+}
+.similar-card__visual-label {
+  position: relative;
+  font-family: var(--f-mono), monospace;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: rgba(168, 197, 214, 0.5);
+}
+.similar-card__body { padding: 20px; }
+.similar-card__model {
+  font-family: var(--f-mono), monospace;
+  font-size: 10px;
+  color: rgba(168, 197, 214, 0.6);
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+.similar-card__title {
+  font-size: 15px;
+  color: white;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+  line-height: 1.3;
+  margin-bottom: 8px;
+}
+.similar-card__meta {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.5;
+}
+@media (max-width: 768px) {
+  .similar-bar__grid { grid-template-columns: 1fr; }
+  .workflow { grid-template-columns: 1fr; gap: 32px; }
+  .workflow__sidebar { position: static; }
+  .triptych { grid-template-columns: 1fr; }
 }

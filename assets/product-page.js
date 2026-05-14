@@ -66,4 +66,28 @@
       window.scrollTo({ top, behavior: 'smooth' });
     });
   });
+
+  // ---- Similar Products tabs (Similar / Often Bought Together) ----
+  const similarTabs = document.querySelectorAll('.similar-bar__tab');
+  const similarPanes = document.querySelectorAll('.similar-bar__pane');
+  similarTabs.forEach(tab => {
+    tab.addEventListener('click', (e) => {
+      e.preventDefault();
+      const paneId = tab.dataset.pane;
+      similarTabs.forEach(t => t.classList.toggle('is-active', t.dataset.pane === paneId));
+      similarPanes.forEach(p => p.classList.toggle('is-active', p.dataset.pane === paneId));
+    });
+  });
+
+  // ---- Workflow sidebar steps ----
+  const workflowSteps = document.querySelectorAll('.workflow__step');
+  const workflowPanes = document.querySelectorAll('.workflow__pane');
+  workflowSteps.forEach(step => {
+    step.addEventListener('click', (e) => {
+      e.preventDefault();
+      const paneId = step.dataset.pane;
+      workflowSteps.forEach(s => s.classList.toggle('is-active', s.dataset.pane === paneId));
+      workflowPanes.forEach(p => p.classList.toggle('is-active', p.dataset.pane === paneId));
+    });
+  });
 })();

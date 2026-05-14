@@ -54,10 +54,10 @@
     <div class="product-tabs__inner">
       <a href="#overview" class="product-tabs__link is-active">Overview</a>
       <a href="#impact" class="product-tabs__link">Impact</a>
+      <a href="#workflow" class="product-tabs__link">Workflows</a>
       <a href="#features" class="product-tabs__link">Features</a>
       <a href="#patents" class="product-tabs__link">Patents</a>
       <a href="#specs" class="product-tabs__link">Specifications</a>
-      <a href="#applications" class="product-tabs__link">Applications</a>
       <a href="#downloads" class="product-tabs__link">Downloads</a>
     </div>
   </nav>
@@ -156,6 +156,109 @@
     </div>
   </section>
 
+  <!-- Workflow — Leica-style numbered sidebar -->
+  <section class="section section--soft" id="workflow">
+    <div class="section__inner">
+      <div class="section-head">
+        <h2 class="section-head__title">Choose the right workflow for your experiment</h2>
+        <div class="section-head__meta">SOC-12F는 다음 워크플로우를 지원합니다</div>
+      </div>
+      <div class="workflow">
+        <aside class="workflow__sidebar">
+          <div class="workflow__label">WORKFLOWS</div>
+          <ul class="workflow__list">
+            <li><a class="workflow__step is-active" data-pane="w1"><span class="workflow__step-num">01</span>Standard SEM Imaging</a></li>
+            <li><a class="workflow__step" data-pane="w2"><span class="workflow__step-num">02</span>FE-SEM 고분해능</a></li>
+            <li><a class="workflow__step" data-pane="w3"><span class="workflow__step-num">03</span>TEM 시료 전처리</a></li>
+            <li><a class="workflow__step" data-pane="w4"><span class="workflow__step-num">04</span>다공성 / 복잡 구조</a></li>
+            <li><a class="workflow__step" data-pane="w5"><span class="workflow__step-num">05</span>생물·세포 시료</a></li>
+          </ul>
+        </aside>
+        <div class="workflow__content">
+          <div class="workflow__pane is-active" data-pane="w1">
+            <h3 class="workflow__pane-title">Standard SEM Imaging</h3>
+            <p class="workflow__pane-body">
+              일반 SEM 관찰을 위한 비정질 박막 형성. 100,000× 미만 배율에서 표면 디테일을 그대로 보존하며,
+              금속 코팅 대비 입자 미관측으로 분석 품질을 한 단계 끌어올립니다.
+            </p>
+            <ul class="brand-bullet">
+              <li>OsO₄ Flash Mode 0.5초 × 3 펄스 — 가스 사용량 최소화</li>
+              <li>듀얼 밸브 가스 제어 + Sealed Cartridge로 사용자 노출 0</li>
+              <li>FTM 0.1 nm 실시간 두께 모니터링</li>
+            </ul>
+            <a href="/applications/sem-imaging/" class="inline-cta">SEM Imaging 응용 가이드</a>
+          </div>
+          <div class="workflow__pane" data-pane="w2">
+            <h3 class="workflow__pane-title">FE-SEM 고분해능</h3>
+            <p class="workflow__pane-body">
+              100,000× 배율 이상에서도 박막 입자가 보이지 않는 비정질 박막의 표준. 나노 단위 미세 구조 분석,
+              차세대 메모리·반도체 박막 연구에 최적.
+            </p>
+            <ul class="brand-bullet">
+              <li>OsO₄ 비정질 박막 — grain boundary 없음</li>
+              <li>FE-SEM 한계 분해능 도달</li>
+              <li>Sealed Cartridge로 박막 순도 보장</li>
+            </ul>
+            <a href="/applications/high-resolution/" class="inline-cta">High-Resolution 응용 가이드</a>
+          </div>
+          <div class="workflow__pane" data-pane="w3">
+            <h3 class="workflow__pane-title">TEM 시료 전처리</h3>
+            <p class="workflow__pane-body">
+              Glow Discharge 유닛이 본체에 통합되어 별도 표면처리 장비 없이 TEM 시료 전처리가 가능합니다.
+              친수성·소수성 표면 변환 → 분자 분산·부착 개선.
+            </p>
+            <ul class="brand-bullet">
+              <li>Glow Discharge 통합 — SEM·TEM 한 장비에서</li>
+              <li>친수성·소수성 응용 모두 가능</li>
+              <li>워크플로우 시간 단축</li>
+            </ul>
+            <a href="/applications/tem-analytical/" class="inline-cta">TEM &amp; Analytical 응용 가이드</a>
+          </div>
+          <div class="workflow__pane" data-pane="w4">
+            <h3 class="workflow__pane-title">다공성 · 복잡 구조 시료</h3>
+            <p class="workflow__pane-body">
+              CVD (Chemical Vapor Deposition) 방식은 스퍼터링과 달리 가스 확산을 통해 시료 표면을 코팅하므로,
+              촉매·MOF·다공성 폴리머 등 복잡 구조 시료의 미세 형상을 그대로 보존하면서 균일하게 코팅합니다.
+            </p>
+            <ul class="brand-bullet">
+              <li>CVD 가스 확산 — 시료 내부까지 코팅 도달</li>
+              <li>다공성 구조 보존</li>
+              <li>스퍼터링이 닿지 않는 표면도 코팅</li>
+            </ul>
+          </div>
+          <div class="workflow__pane" data-pane="w5">
+            <h3 class="workflow__pane-title">생물·세포·조직 시료</h3>
+            <p class="workflow__pane-body">
+              섬세한 생물학적 시료의 미세 구조를 손상 없이 보존하는 표준. Flash Mode의 짧은 펄스로 열 영향 최소화,
+              비정질 박막으로 분석 품질 극대화.
+            </p>
+            <ul class="brand-bullet">
+              <li>Flash Mode — 짧은 펄스로 열 손상 차단</li>
+              <li>분자 단위 미세 구조 보존</li>
+              <li>안전 5단계 가스 차단 — 생물 연구실 적합</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Triptych composite (Leica-style product + sample story) -->
+      <div class="triptych">
+        <div class="triptych__cell triptych__cell--ph">
+          <span class="triptych__cell-label">PRODUCT PHOTO</span>
+        </div>
+        <div class="triptych__cell triptych__cell--ph">
+          <span class="triptych__cell-label">SAMPLE A — SEM RESULT</span>
+        </div>
+        <div class="triptych__cell triptych__cell--ph">
+          <span class="triptych__cell-label">SAMPLE B — TEM RESULT</span>
+        </div>
+      </div>
+      <div style="max-width: var(--max-w); margin: 16px auto 0; font-family: var(--f-mono), monospace; font-size: 10px; color: var(--c-text-soft); letter-spacing: 1px;">
+        [Product] · [Sample A · 50K× SEM] · [Sample B · 200K× FE-SEM] — captions to be added
+      </div>
+    </div>
+  </section>
+
   <section class="section" id="features">
     <div class="section__inner">
       <div class="section-head">
@@ -164,7 +267,7 @@
       </div>
 
       <div class="feature-block">
-        <div class="feature-block__visual" style="background: var(--c-bg-soft); background-image: url('/assets/diagrams/negative-pressure-fume-structure.png'); background-size: contain; background-repeat: no-repeat; background-position: center;"></div>
+        <div class="feature-block__visual"><div class="ph-visual"><div class="ph-visual__inner"><span class="ph-visual__label">SAMPLE / DIAGRAM</span><div class="ph-visual__caption">실제 이미지 추가 예정</div></div></div></div>
         <div>
           <div class="feature-block__eyebrow">01 · FUME AUTO SAMPLE EXCHANGE · PATENTED</div>
           <h3 class="feature-block__title">버튼 한 번,<br>시료가 알아서 들고나갑니다.</h3>
@@ -183,11 +286,7 @@
       </div>
 
       <div class="feature-block feature-block--reverse">
-        <div class="feature-block__visual" style="background: linear-gradient(135deg, #1B3A5C 0%, #0A1B2E 100%); position: relative;">
-          <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: rgba(168, 197, 214, 0.85); font-size: 11px; letter-spacing: 3px; text-align: center;">
-            <div style="font-size: 64px; color: white; margin-bottom: 16px; font-weight: 500; letter-spacing: -2px;">4</div>
-            <div>LAYERS OF GAS CONTAINMENT</div>
-          </div>
+        <div class="feature-block__visual"><div class="ph-visual ph-visual--dark"><div class="ph-visual__inner"><span class="ph-visual__label">DIAGRAM</span><div class="ph-visual__caption">기술 다이어그램 추가 예정</div></div></div></div>
         </div>
         <div>
           <div class="feature-block__eyebrow">02 · GAS LEAK PREVENTION · PATENTED</div>
@@ -208,7 +307,7 @@
 
       <div class="feature-block">
         <div>
-          <div class="feature-block__visual" style="background-image: url('/assets/samples/amyloid-coated.jpg'); background-size: cover; background-position: center; min-height: 280px;"></div>
+          <div class="feature-block__visual"><div class="ph-visual"><div class="ph-visual__inner"><span class="ph-visual__label">SAMPLE / DIAGRAM</span><div class="ph-visual__caption">실제 이미지 추가 예정</div></div></div></div>
           <div class="image-caption">
             <span class="image-caption__sample">아밀로이드 fibril · OsO₄ 비정질 박막 코팅</span>
             <div class="image-caption__meta">
@@ -252,12 +351,7 @@
       </div>
 
       <div class="feature-block">
-        <div class="feature-block__visual" style="background: var(--c-bg-soft);">
-          <div style="text-align: center; padding: 32px;">
-            <div style="font-size: 11px; color: var(--c-text-soft); letter-spacing: 3px;">ONE INSTRUMENT</div>
-            <div style="font-size: 36px; color: var(--c-text); font-weight: 500; margin-top: 12px; letter-spacing: -0.5px;">SEM &amp; TEM</div>
-            <div style="font-size: 13px; color: var(--c-text-muted); margin-top: 12px;">Osmium Coating + Glow Discharge</div>
-          </div>
+        <div class="feature-block__visual"><div class="ph-visual"><div class="ph-visual__inner"><span class="ph-visual__label">SAMPLE / DIAGRAM</span><div class="ph-visual__caption">실제 이미지 추가 예정</div></div></div></div>
         </div>
         <div>
           <div class="feature-block__eyebrow">05 · INTEGRATED GLOW DISCHARGE</div>
@@ -434,10 +528,7 @@
       </div>
       <div class="product-grid product-grid--2">
         <a href="/products/soc-12n/" class="product-card">
-          <div class="product-card__visual">
-            <span class="product-card__badge">EXPORT</span>
-            <img src="/assets/products/SOC-12F.png" alt="SOC-12N">
-          </div>
+          <div class="product-card__visual"><div class="ph-visual" style="aspect-ratio: auto; height: 100%; border-radius: 0; border: none;"><div class="ph-visual__inner"><span class="ph-visual__label">PRODUCT IMAGE</span></div></div></div>
           <div class="product-card__body">
             <div class="product-card__model">SOC-12N</div>
             <h3 class="product-card__title">Osmium Coater · Export Model</h3>
@@ -446,9 +537,7 @@
           </div>
         </a>
         <a href="/products/smc-15s/" class="product-card">
-          <div class="product-card__visual">
-            <img src="/assets/products/SMC-15S.png" alt="SMC-15S">
-          </div>
+          <div class="product-card__visual"><div class="ph-visual" style="aspect-ratio: auto; height: 100%; border-radius: 0; border: none;"><div class="ph-visual__inner"><span class="ph-visual__label">PRODUCT IMAGE</span></div></div></div>
           <div class="product-card__body">
             <div class="product-card__model">SMC-15S</div>
             <h3 class="product-card__title">HV Sputter</h3>
@@ -488,6 +577,72 @@
       <a href="tel:+82428611878">+82.42.861.1878</a>
     </div>
   </section>
+  <!-- Similar Products — DARK MODE bar at page bottom (Leica-style) -->
+  <section class="similar-bar">
+    <div class="similar-bar__inner">
+      <div class="similar-bar__tabs">
+        <a class="similar-bar__tab is-active" data-pane="similar">Similar Products</a>
+        <a class="similar-bar__tab" data-pane="together">Often Bought Together</a>
+      </div>
+      <div class="similar-bar__pane is-active" data-pane="similar">
+        <div class="similar-bar__grid">
+          <a href="/products/soc-12n/" class="similar-card">
+            <div class="similar-card__visual"><span class="similar-card__visual-label">SOC-12N</span></div>
+            <div class="similar-card__body">
+              <div class="similar-card__model">SOC-12N</div>
+              <h3 class="similar-card__title">Osmium Coater (Export)</h3>
+              <p class="similar-card__meta">Fume 제외 베이스 모델</p>
+            </div>
+          </a>
+          <a href="/products/smc-15e/" class="similar-card">
+            <div class="similar-card__visual"><span class="similar-card__visual-label">SMC-15E</span></div>
+            <div class="similar-card__body">
+              <div class="similar-card__model">SMC-15E</div>
+              <h3 class="similar-card__title">Auto Carbon Coater</h3>
+              <p class="similar-card__meta">대체 비정질 박막</p>
+            </div>
+          </a>
+          <a href="/products/smc-22ts/" class="similar-card">
+            <div class="similar-card__visual"><span class="similar-card__visual-label">SMC-22TS</span></div>
+            <div class="similar-card__body">
+              <div class="similar-card__model">SMC-22TS</div>
+              <h3 class="similar-card__title">Triple Gun Sputter</h3>
+              <p class="similar-card__meta">Cr 고분해능 코팅</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="similar-bar__pane" data-pane="together">
+        <div class="similar-bar__grid">
+          <a href="/products/smc-10g/" class="similar-card">
+            <div class="similar-card__visual"><span class="similar-card__visual-label">SMC-10G</span></div>
+            <div class="similar-card__body">
+              <div class="similar-card__model">SMC-10G</div>
+              <h3 class="similar-card__title">Glow Discharge</h3>
+              <p class="similar-card__meta">추가 표면 처리 (통합 모델 기본)</p>
+            </div>
+          </a>
+          <a href="/products/smc-15s/" class="similar-card">
+            <div class="similar-card__visual"><span class="similar-card__visual-label">SMC-15S</span></div>
+            <div class="similar-card__body">
+              <div class="similar-card__model">SMC-15S</div>
+              <h3 class="similar-card__title">HV Sputter</h3>
+              <p class="similar-card__meta">박막 응용 페어</p>
+            </div>
+          </a>
+          <a href="/products/smc-15e/" class="similar-card">
+            <div class="similar-card__visual"><span class="similar-card__visual-label">SMC-15E</span></div>
+            <div class="similar-card__body">
+              <div class="similar-card__model">SMC-15E</div>
+              <h3 class="similar-card__title">Auto Carbon Coater</h3>
+              <p class="similar-card__meta">EDS 분석 카본</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
   <footer class="site-footer">
     <div class="site-footer__grid">
