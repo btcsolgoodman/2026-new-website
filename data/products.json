@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-14T12:31:28.200Z",
+  "generatedAt": "2026-05-15T02:19:31.105Z",
   "count": 12,
   "items": [
     {
@@ -35,11 +35,11 @@
       ],
       "overviewHeadline": "스퍼터링이 닿지 않는 곳까지.",
       "overviewBody": "SOC-12F는 SEMIAN의 시그니처 오스뮴 코터입니다. SOC-12N의 검증된 CVD 코팅 성능에 흄 통합 시스템과 자동 시료 교환 시스템(특허 KR 10-2289120)을 추가한 국내 전용 모델로, 다공성·복잡 구조 시료에도 균일한 비정질 박막을 형성합니다.\n\n안전 구조는 5단계입니다 — Flash 소량 주입, 메인 챔버 코팅, 보조 챔버 1차 제거, 활성탄 2차 트랩, HEPA 3차 최종 트랩. 흄 케이스 부압 유지로 외부 누출까지 차단합니다.",
-      "features": "",
+      "features": "## 흄 자동 시료 교환 (특허 KR 10-2289120)\n버튼 하나로 메인 챔버 자동 상승 → 스테이지가 흄 케이스를 열고 사용자 쪽으로 이동 → 시료 안착 후 자동 후퇴 → 진공 → 코팅.\n- 흄 케이스 개방 불필요\n- 사용자 가스 노출 0\n- SOC-12F만의 차별 기능\n\n## 오스뮴 가스 누출 방지 (특허 KR 10-2096523)\nOsO₄는 강력한 독성 가스. SOC-12F는 5단계 안전 구조 + 지속적 부압 유지로 사용자 노출 원천 차단.\n- ① Flash 소량 펄스 주입\n- ② 메인 챔버 코팅 (Sealed Cartridge 진공 절단)\n- ③ 보조 챔버(Auxiliary Chamber) 1차 제거\n- ④ 활성탄 2차 트랩\n- ⑤ 활성탄 + HEPA 3차 최종 트랩\n\n## Flash Mode (결정화 없는 비정질 박막)\n0.5초 펄스를 3회 반복 — 미반응 가스 배출 최소화, 앵플 수명 연장. 100,000× 배율에서도 입자 미관측.\n\n## Sealed Cartridge (진공 중 절단)\nOsO₄ 앵플을 진공 챔버 안에서 절단하는 방식. 대기 절단 시의 가스 노출 0. 작업자 직접 접촉 없음.\n\n## Glow Discharge 통합\nTEM 시료 친수성·소수성 표면 처리 유닛 통합. SEM·TEM 워크플로우 한 장비에서 완결.\n\n## CVD 구조 (Chemical Vapor Deposition)\n스퍼터링이 닿지 않는 다공성 · 복잡 구조 시료 내부까지 가스 확산으로 균일 코팅. 촉매 · MOF · 다공성 폴리머 · 생물 시료 최적.",
       "specTable": [
         {
           "label": "Method",
-          "value": "Chemical Vapor Deposition (CVD)"
+          "value": "Chemical Vapor Deposition (CVD) + Flash Mode"
         },
         {
           "label": "Ultimate Vacuum",
@@ -47,11 +47,15 @@
         },
         {
           "label": "Working Vacuum",
-          "value": "8.0 × 10⁻² ~ 5.0 × 10⁻¹ Mbar"
+          "value": "8.0 × 10⁻² ~ 5.0 × 10⁻¹ Mbar (권장 1.5 × 10⁻¹)"
+        },
+        {
+          "label": "Vacuum Measurement",
+          "value": "Pirani Gauges"
         },
         {
           "label": "FTM",
-          "value": "0.1 nm"
+          "value": "0.1 nm (unit)"
         },
         {
           "label": "Max Current",
@@ -135,8 +139,61 @@
       ],
       "overviewHeadline": "정밀과 안전을 한 시스템에.",
       "overviewBody": "오스뮴 코팅은 비정질(amorphous) 박막을 형성해 최고 분해능 관찰과 나노 응용 연구에 탁월하며, 섬세한 생물·섬유 시료의 미세 구조를 그대로 보존합니다.\n\nSOC-12N은 보조 챔버를 통한 잔류 오스뮴 효율적 제거, 가스 누출 감지 알람, 직접 접촉 없이 카트리지를 도입할 수 있는 Sealed Cartridge 시스템으로 안전 기준을 충족합니다.",
-      "features": "",
-      "specTable": [],
+      "features": "## Sealed Cartridge (특허 KR 10-2096523)\n진공 챔버 안에서 OsO₄ 앵플을 절단하는 방식. 대기 접촉 없이 안전하게 도입.\n\n## Auxiliary Chamber\n잔류 오스뮴 효율적 제거. 메인 챔버 가스 감지 + 자동 알람.\n\n## Flash Mode + CVD\n100,000× 배율에서도 입자 미관측. CVD로 다공성 · 복잡 구조 군일 코팅.\n\n## 0.1nm FTM 실시간 두께 제어\nQCM 기반 실시간 측정. 목표 두께 도달 시 자동 종료.\n\n## SOC-12F vs SOC-12N 차이\nSOC-12N에 없는 SOC-12F 전용 기능: 흄 케이스 + 자동 시료 교환(특허 KR 10-2289120) + Glow Discharge 통합. 국내 안전 규제 까다로운 환경은 SOC-12F, 그 외 범용·수출용은 SOC-12N.",
+      "specTable": [
+        {
+          "label": "Method",
+          "value": "Chemical Vapor Deposition (CVD) + Flash Mode"
+        },
+        {
+          "label": "Ultimate Vacuum",
+          "value": "2.0 × 10⁻² Mbar"
+        },
+        {
+          "label": "Working Vacuum",
+          "value": "8.0 × 10⁻² ~ 5.0 × 10⁻¹ Mbar"
+        },
+        {
+          "label": "Vacuum Measurement",
+          "value": "Pirani Gauges"
+        },
+        {
+          "label": "FTM",
+          "value": "0.1 nm (unit)"
+        },
+        {
+          "label": "Max Current",
+          "value": "30 mA"
+        },
+        {
+          "label": "Chamber Size",
+          "value": "Ø 120 × 115 mm"
+        },
+        {
+          "label": "Weight",
+          "value": "20 kg"
+        },
+        {
+          "label": "Display",
+          "value": "8 inch LCD"
+        },
+        {
+          "label": "Power",
+          "value": "220V / 110V"
+        },
+        {
+          "label": "Gas",
+          "value": "OsO₄ ampoule (Sealed Cartridge)"
+        },
+        {
+          "label": "Patent",
+          "value": "KR 10-2096523 (Gas Leak Prevention)"
+        },
+        {
+          "label": "Best For",
+          "value": "수출·범용 · 흄 필요 없는 환경"
+        }
+      ],
       "applications": [],
       "patents": "",
       "quote": {
@@ -180,10 +237,91 @@
           "value": "Pt · Cr · C"
         }
       ],
-      "overviewHeadline": "",
-      "overviewBody": "",
-      "features": "",
-      "specTable": [],
+      "overviewHeadline": "EM 관찰부터\n다층 박막까지.",
+      "overviewBody": "SMC-22TS는 SEMIAN의 시그니처 트리플 건 스퍼터입니다. SEM 표준용 Pt, 고분해능 FE-SEM용 Cr, EDS/WDX/EBSD 분석용 Carbon 3개 타겟을 한 시스템에 장착해 도구 없이 자유롭게 전환할 수 있습니다.\n\n고분해능 이미징부터 원소 분석까지 EM 워크플로우 전반의 처리량과 효율을 극적으로 향상시키며, 단일 공정에서 metal/oxide·magnetic/non-magnetic multilayer 구조도 한 번에 형성합니다.\n\n3개 타겟은 Pt·Cr·C이 기본이지만 Au, Ag, Ni, Ti 등 다양한 금속으로 교체 가능해 응용 영역의 확장성이 높습니다.",
+      "features": "## 3 Targets, One System\nPt(일반 SEM 관찰) · Cr(FE-SEM 고분해능) · C(EDS·EBSD·WDX 분석) — 도구 없이 즉시 전환.\n- 각 타겟 개별 셔터 보호\n- Cross-contamination 차단\n- 고순도 박막 보장\n\n## 단일 공정, 다층 박막 (One-Step Multilayer)\n연속 단일 공정으로 metal/oxide · magnetic/non-magnetic 다층 구조를 한 번에 제작.\n- 차세대 메모리 자성층\n- 고성능 센서 박막\n- OLED·LCD·터치스크린 투명 전극\n\n## 3D 시료 70° 틸트 회전 (옵션)\n복잡한 3차원 시료 형상을 각도 제어 다층 증착.\n- 0° · 45° · 70° 단계·가변 설정\n- 반도체 3D 디바이스 · MEMS\n- 촉매 · 전극 재료\n- 3차원 광학 부품\n\n## 웨이퍼 대면적 균일 (옵션 Planetary)\n자전·공전 동시 수행으로 직경 100mm까지 일관된 박막.\n- 4인치 웨이퍼 균일도 보장\n- 굴곡·복잡 형상 시료 대응\n\n## 자유로운 타겟 교체\nPt·Cr·C이 기본이지만 시료 연구용 금속 자유 교체. Au, Ag, Ni, Ti, Pd 등 일반 금속 전체 호환.\n\n## Pre-Sputtering 구조\n증착 전 타겟 표면 오염원을 제거하는 프리스퍼터링. 깨끗한 입자만 시료에 증착.\n\n## Recipe 저장·불러내기\n자주 쓰는 공정 파라미터(전류·시간·서터 순서)를 Recipe로 저장. 다수 사용자·다수 프로젝트 운용에 적합.",
+      "specTable": [
+        {
+          "label": "Ultimate Vacuum",
+          "value": "5.0 × 10⁻⁵ Mbar"
+        },
+        {
+          "label": "Working Vacuum",
+          "value": "1.0 × 10⁻¹ ~ 8.0 × 10⁻³ Mbar"
+        },
+        {
+          "label": "Pump Down Time",
+          "value": "8.0 × 10⁻³ Mbar in 100 sec"
+        },
+        {
+          "label": "FTM",
+          "value": "0.1 nm"
+        },
+        {
+          "label": "Max Current",
+          "value": "150 mA"
+        },
+        {
+          "label": "Targets",
+          "value": "Pt · Cr · C (Au · Ag · Ni · Ti 등 교체 가능)"
+        },
+        {
+          "label": "Gas",
+          "value": "Ar, N₂"
+        },
+        {
+          "label": "Product Size",
+          "value": "400 × 390 × 450 mm"
+        },
+        {
+          "label": "Weight",
+          "value": "30 kg"
+        },
+        {
+          "label": "Chamber Size",
+          "value": "Ø 210 × 170 mm"
+        },
+        {
+          "label": "Target Size",
+          "value": "Ø 50~57 mm"
+        },
+        {
+          "label": "Stage",
+          "value": "3축 (R, Tilt, Z)"
+        },
+        {
+          "label": "Rotation Speed",
+          "value": "5 ~ 30 RPM"
+        },
+        {
+          "label": "Working Distance",
+          "value": "30 ~ 80 mm"
+        },
+        {
+          "label": "Display",
+          "value": "10 inch LCD"
+        },
+        {
+          "label": "Power",
+          "value": "220V / 110V"
+        },
+        {
+          "label": "Options",
+          "value": "70° Tilt-Rotation · 4\" Planetary Rotation"
+        },
+        {
+          "label": "Pre-Sputtering",
+          "value": "지원"
+        },
+        {
+          "label": "Recipe Save/Load",
+          "value": "지원"
+        },
+        {
+          "label": "Process Logging",
+          "value": "지원"
+        }
+      ],
       "applications": [],
       "patents": "",
       "quote": {
@@ -198,28 +336,103 @@
     },
     {
       "id": "360733b0-2aff-8132-b21d-c4d500ecf510",
-      "name": "Double Gun Sputter",
-      "code": "SMC-22TD",
-      "slug": "smc-22td",
+      "name": "Dual Gun Sputter",
+      "code": "SMC-22DS",
+      "slug": "smc-22ds",
       "category": "Sputter",
-      "status": "Coming Soon",
+      "status": "Published",
       "badge": "NEW",
       "order": 4,
-      "tagline": "더블 타겟, 더블 자유도 — 신제품",
-      "heroLead": "SMC-22TS 트리플 플랫폼을 더블 타겟으로 합리화한 시그니처 신제품. Bilayer 박막 응용에 최적.",
+      "tagline": "Seed Layer + Multi Layer — 한 번의 공정으로 완성",
+      "heroLead": "타겟 측과 시료대 측에 각각 독립 셔터를 탑재한 듀얼 셔터 시스템 + 회전 시료 스테이지. 한 번의 진공 공정으로 접착층(Cr·Ti) → 기능층(Au·Pt) 다층 박막을 완성하며, 두 타겟 간 cross-contamination을 물리적으로 차단해 박막 순도·재현성을 동시에 확보합니다.",
       "heroImage": null,
       "cardImage": null,
-      "specGlance": [],
-      "overviewHeadline": "",
-      "overviewBody": "",
-      "features": "",
-      "specTable": [],
-      "applications": [],
+      "specGlance": [
+        {
+          "label": "BASE VACUUM",
+          "value": "5.0×10⁻⁵ Mbar"
+        },
+        {
+          "label": "FTM",
+          "value": "0.1 nm"
+        },
+        {
+          "label": "MAX CURRENT",
+          "value": "150 mA"
+        },
+        {
+          "label": "CHAMBER",
+          "value": "Ø 220 × 170 mm"
+        }
+      ],
+      "overviewHeadline": "두 개의 셔터,\n한 번의 진공.",
+      "overviewBody": "SMC-22DS는 다층 박막 듀얼 셔터 구조와 회전 시료대가 결합된 듀얼 건 스퍼터 시스템입니다. 기초 SEM 시편 코팅부터 첨단 전극·MEMS 박막 연구까지 광범위한 다층 코팅 솔루션입니다.\n\nCr·Ti seed layer 위에 Au·Pt 기능층을 진공을 깨지 않고 단일 공정으로 연속 증착합니다. 인터페이스 산화·오염이 zero로 유지되어, 부착력과 장기 신뢰성이 단일 금속 증착 대비 월등히 향상됩니다.\n\n두 타겟의 증착 속도를 정밀 제어하여 조성이 점진적으로 변하는 기울기 박막(Compositionally Graded Film) 제작도 가능합니다.",
+      "features": "## 듀얼 셔터 정밀 제어\n타겟 측과 시료대 측 각각 독립 셔터. 시료 보호 상태에서 각 타겟 프리스퍼터링, 두 타겟 간 cross-contamination 차단.\n- 박막 순도·재현성 극대화\n- 각 타겟 개별 프리스퍼터링\n- 교차오염 물리적 차단\n\n## 단일 공정 Seed + Multi Layer\nCr·Ti seed layer 위 Main 기능층 진공 단일 공정 연속 증착. 인터페이스 산화·오염 zero.\n- 전극·박막 장기 신뢰성\n- 바이오 MEMS · 반도체 전극 · 광학 다층 박막 최적화\n\n## 두 가지 운용 모드 (Sequential · Co-Sputtering)\n동일 챔버에서 모드 자유 전환.\n- Sequential: 다른 타겟 시간차 가동 → 다층 박막 (접착층 + 기능층)\n- Co-Sputtering (Same): 같은 타겟 동시 가동 + 셔터 제거 + 대면적 시료대 → 4~6인치 균일 코팅\n- Co-Sputtering (Mixed): 다른 타겟 동시 가동 → 합금·조성 제어 박막 (Graded Film)\n\n## 4인치 웨이퍼 균일도\n4인치 웨이퍼 회전 시료대에서 균질한 박막 기판 제작 가능. Co-Sputtering Same 모드 시 6인치 대면적까지.\n\n## 시료대-FTM 일체화\n코팅 위치 이동 시 FTM 함께 이동. 0.1nm 단위 두께 제어로 정밀·재현성 높은 공정 운용.\n\n## 직관적 LCD 터치 인터페이스\n10인치 LCD 터치 컨트롤로 공정 파라미터 직관 설정. 모드 전환·FTM 두께 제어 한 화면에서.\n\n## 자유로운 타겟 교체\nAu, Pt, Ag, Cr, Ti, Ni 등 — 왠만한 금속 타겟 자유롭게 교체 가능. 응용 영역에 맞춰 확장.",
+      "specTable": [
+        {
+          "label": "Base Vacuum",
+          "value": "5.0 × 10⁻⁵ Mbar"
+        },
+        {
+          "label": "FTM 분해능",
+          "value": "0.1 nm"
+        },
+        {
+          "label": "Max Current",
+          "value": "150 mA"
+        },
+        {
+          "label": "Rotation Speed",
+          "value": "5 ~ 30 rpm"
+        },
+        {
+          "label": "Stage",
+          "value": "Z-axis Tilt"
+        },
+        {
+          "label": "LCD Touch",
+          "value": "10 inch"
+        },
+        {
+          "label": "Target Material",
+          "value": "Au · Pt · Ag · Cr · Ti · Ni 등 (교체 가능)"
+        },
+        {
+          "label": "Chamber Size",
+          "value": "Ø 220 × 170 mm"
+        },
+        {
+          "label": "Product Size",
+          "value": "400 × 390 × 450 mm"
+        },
+        {
+          "label": "Weight",
+          "value": "30 kg"
+        },
+        {
+          "label": "Vacuum Gauge",
+          "value": "Pirani"
+        },
+        {
+          "label": "Certification",
+          "value": "KC / CE / FCC"
+        },
+        {
+          "label": "Options",
+          "value": "70° Tilt-Rotation (3D 시료용)"
+        }
+      ],
+      "applications": [
+        "SEM Imaging",
+        "High-Resolution",
+        "반도체",
+        "신소재"
+      ],
       "patents": "",
       "quote": {
-        "text": "",
-        "author": "",
-        "affiliation": ""
+        "text": "Seed layer를 별도 공정에서 증착할 필요가 없어졌습니다. Cr·Ti 접착층 위에 Au를 같은 진공에서 바로 올리니, 전극 박막의 부착력 차이가 확연합니다.",
+        "author": "[연구자 이름 · 직책]",
+        "affiliation": "[소속 기관 · SMC-22DS 사용자]"
       },
       "brochurePdf": null,
       "ctaQuoteUrl": null,
@@ -257,10 +470,87 @@
           "value": "< 3 min"
         }
       ],
-      "overviewHeadline": "",
-      "overviewBody": "",
-      "features": "",
-      "specTable": [],
+      "overviewHeadline": "정밀과 처리량을\n한 스퍼터에.",
+      "overviewBody": "SMC-15S는 SEMIAN의 시그니처 고진공 스퍼터입니다. 핵심은 Z·R·T 조작과 박막 두께 모니터링을 진공 호환 단일 유닛으로 통합한 FTM 일체형 멀티 시료 스테이지 — 스테이지와 FTM이 함께 움직여 높이가 변해도 tool-factor calibration 없이 정확한 두께를 읽습니다.\n\nRapid Coating Mode로 비산화성 금속을 3분 이내 증착하고, 코팅 중 작업거리를 자동 최대화하는 열 손상 방지 루틴으로 민감한 시료까지 안전하게 처리합니다.",
+      "features": "## FTM 통합 멀티 시료 스테이지 (특허)\n수평 이동·틸트·회전·박막 두께 모니터링을 진공 호환 단일 유닛으로 통합. 스테이지와 FTM이 수직으로 함께 움직여서 높이 변화 시에도 tool-factor calibration 불필요.\n- 매번 정확한 두께 측정\n- Z·R·T 조작 시 스테이지 분리 불필요\n- 공정 재현성 증가\n\n## Rapid Coating Mode (< 3분)\n비산화성 금속(Au·Pt·Ag)을 3분 이내 증착. 산화성 금속(Cr·Ni)도 공정 파라미터 조정으로 대응.\n- 다수 사용자 환경 처리량 극대화\n- 일상 분석 워크플로우 효율\n\n## Auto WD 열 손상 방지\n코팅 중 작업거리(WD) 자동 최대화 → 열 스트레스 최소화 → 완료 후 원위치 복귀.\n- 자동 셔터 제어 동시 작동\n- 생물·고분자 등 섬세한 시료 보존\n\n## Pre-Sputtering + 자동 셔터\n증착 전 타겟 오염 제거. 자동 셔터가 시료를 보호한 상태로.\n\n## 자유로운 타겟 교체\nAu · Pt · Ag · Cr · Ni · Ti · Pd 등 일반 금속 전체 교체 가능. 응용 영역에 따라 타겟 교체.\n\n## Recipe 저장 · Process Logging\n공정 파라미터 Recipe로 저장. 모든 공정이 USB 로그 저장되어 QA 추적 가능.",
+      "specTable": [
+        {
+          "label": "Ultimate Vacuum",
+          "value": "5.0 × 10⁻⁵ Mbar"
+        },
+        {
+          "label": "Working Pressure",
+          "value": "8.0 × 10⁻³ ~ 5.0 × 10⁻¹ Mbar"
+        },
+        {
+          "label": "Pump Down Time",
+          "value": "8.0 × 10⁻³ Mbar in 100 sec"
+        },
+        {
+          "label": "FTM",
+          "value": "0.1 nm"
+        },
+        {
+          "label": "Max Current",
+          "value": "150 mA"
+        },
+        {
+          "label": "Targets",
+          "value": "Au · Pt · Ag · Cr · Ni · Ti · Pd 등 (교체 가능)"
+        },
+        {
+          "label": "Gas",
+          "value": "Ar, N₂"
+        },
+        {
+          "label": "Product Size",
+          "value": "420 × 360 × 470 mm"
+        },
+        {
+          "label": "Weight",
+          "value": "20 kg"
+        },
+        {
+          "label": "Chamber Size",
+          "value": "Ø 150 × 120 mm"
+        },
+        {
+          "label": "Target Size",
+          "value": "Ø 57 mm"
+        },
+        {
+          "label": "Stage",
+          "value": "Auto Rotation + Z 이동 / Tilt 0° 또는 30°"
+        },
+        {
+          "label": "Rotation Speed",
+          "value": "5 ~ 30 RPM"
+        },
+        {
+          "label": "Working Distance",
+          "value": "30 ~ 80 mm"
+        },
+        {
+          "label": "Display",
+          "value": "10 inch LCD"
+        },
+        {
+          "label": "Power",
+          "value": "220V / 110V"
+        },
+        {
+          "label": "Pre-Sputtering",
+          "value": "지원"
+        },
+        {
+          "label": "Recipe Save/Load",
+          "value": "지원"
+        },
+        {
+          "label": "Process Logging",
+          "value": "USB 로그 저장"
+        }
+      ],
       "applications": [],
       "patents": "",
       "quote": {
@@ -304,10 +594,63 @@
           "value": "Ar / N₂ 호환"
         }
       ],
-      "overviewHeadline": "",
-      "overviewBody": "",
-      "features": "",
-      "specTable": [],
+      "overviewHeadline": "손바닥 두 개\n크기의 스퍼터.",
+      "overviewBody": "SMC-10S는 4kg, 185×185×245mm로 세계에서 가장 컴팩트한 스퍼터입니다. One-Touch 명령 하나로 진공·플라즈마 코팅·자동 환기 전 시퀀스가 실행되며, 30초 이내 풀 진공에 도달.\n\n글로브박스 IN-OUT 포트를 그대로 통과하는 폼팩터로 이차전지 음극재, 반응성 촉매 등 air-sensitive 시료를 Ar·N₂ 분위기에서 처리할 수 있고, 옵션 HV Desiccator(특허출원중)로 시료 보관까지 한 시스템에 통합합니다.\n\n타겟은 응용에 따라 교체 가능 — 기본 타겟 외도 Au·Pt·Pd · Cr · Ag 등 일반 금속 전체 호환.",
+      "features": "## Compact · 4kg\n185×185×245mm — 일반 실험실 벤치, 좀은 분석실, 글로브박스 환경 어디든 설치.\n\n## One-Touch 전체 시퀀스\n시료 적재 후 버튼 하나 → 진공 → 플라즈마 코팅 → 자동 환기 전체 자동.\n- 초보·학생 운용 가능\n- 다수 사용자 공유 환경\n\n## 글로브박스 호환 설치\n표준 글로브박스 IN-OUT 포트 통과. Ar·N₂ 분위기에서 그대로.\n- 이차전지 음극재\n- 반응성 촉매\n- 산소·수분 민감한 박막\n\n## HV Desiccator 옵션 (특허출원중)\n탈착식 HV Desiccator로 SMC-10S의 진공 시스템을 활용. 초고진공 환경에서 시료 보관.\n\n## 자동 전류 제어 (1~30mA)\n매끄러운 코팅과 후막 증착 모두 가능. 응용에 따라 자동 조정.\n\n## 자유로운 타겟 교체\nAu · Pt · Pd · Cr · Ag 등 일반 금속 전체 호환. 응용에 맞춰 교체.",
+      "specTable": [
+        {
+          "label": "Ultimate Vacuum",
+          "value": "5.0 × 10⁻² Mbar"
+        },
+        {
+          "label": "Working Vacuum",
+          "value": "5.0 × 10⁻² ~ 5.0 × 10⁻¹ Mbar"
+        },
+        {
+          "label": "Vacuum Time",
+          "value": "30 초 이내 (One-Touch)"
+        },
+        {
+          "label": "FTM",
+          "value": "0.1 nm"
+        },
+        {
+          "label": "Max Current",
+          "value": "30 mA (1~30 자동 제어)"
+        },
+        {
+          "label": "Targets",
+          "value": "Au · Pt · Pd · Cr · Ag 등 (교체 가능)"
+        },
+        {
+          "label": "Product Size",
+          "value": "185 × 185 × 245 mm"
+        },
+        {
+          "label": "Weight",
+          "value": "4 kg"
+        },
+        {
+          "label": "Target Size",
+          "value": "Ø 57 mm"
+        },
+        {
+          "label": "Stage (기본)",
+          "value": "Manual 수직 이동 / 평면"
+        },
+        {
+          "label": "Stage (옵션)",
+          "value": "회전 + Tilt 0~45°"
+        },
+        {
+          "label": "호환성",
+          "value": "글로브박스 (Ar/N₂) IN-OUT 포트"
+        },
+        {
+          "label": "옵션",
+          "value": "탈착식 HV Desiccator (특허출원중)"
+        }
+      ],
       "applications": [],
       "patents": "",
       "quote": {
@@ -336,8 +679,57 @@
       "specGlance": [],
       "overviewHeadline": "",
       "overviewBody": "",
-      "features": "",
-      "specTable": [],
+      "features": "## 다중 열 소스 자유 구성 (4 옵션)\nCarbon Fiber · Carbon Rod · Metal Boat 소스를 응용에 맞춰 구성·장착.\n- Option 1: Double Carbon Fiber — 후막 카본 코팅\n- Option 2: Double Carbon Rod — 고전류(100A) 카본 후막\n- Option 3: Carbon Rod + Fiber — multilayer 카본\n- Option 4: Carbon + Metal Boat — 카본-금속 다층 (FIB 보호층)\n\n## 위방향 증착 구조 (Upward)\n중력에 의한 입자 오염 원소 차단. FIB 보호층처럼 깨끗한 박막이 필요할 때 결정적.\n- 각 열 소스 독립 연속 제어\n- 두 소스 자유 조합 → multilayer\n\n## Flash + Pulsed 모드\nFlash는 표준·빠르고, Pulsed는 열에 민감한 시료(생물·고분자)에 권장.\n- Pulsed: fire time · interval time · pulse 회수 설정\n- 열 손상 없이 균일한 박막\n\n## 목표 두께 도달 시 자동 종료\nFTM을 통해 사전 설정 박막 두께에 도달했을 때 자동 정지. 정밀·재현 가능한 코팅.\n\n## 고진공 1×10⁻⁵ Mbar\n고품질 박막 환경. 열증착에 충분한 진공도.",
+      "specTable": [
+        {
+          "label": "Ultimate Vacuum",
+          "value": "1.0 × 10⁻⁵ Mbar"
+        },
+        {
+          "label": "Working Pressure",
+          "value": "5.0 × 10⁻⁵ Mbar 이하"
+        },
+        {
+          "label": "FTM",
+          "value": "0.1 nm"
+        },
+        {
+          "label": "Max Current",
+          "value": "Carbon Rod 100 A / Carbon Fiber 30 A"
+        },
+        {
+          "label": "Coating Mode",
+          "value": "Flash / Pulse"
+        },
+        {
+          "label": "Chamber Size",
+          "value": "Ø 120 × 115 mm"
+        },
+        {
+          "label": "Source Options",
+          "value": "Carbon Rod · Carbon Fiber · Metal · Thermal Cleaning"
+        },
+        {
+          "label": "Option 1",
+          "value": "Double Carbon Fiber"
+        },
+        {
+          "label": "Option 2",
+          "value": "Double Carbon Rod"
+        },
+        {
+          "label": "Option 3",
+          "value": "Carbon Rod + Fiber"
+        },
+        {
+          "label": "Option 4",
+          "value": "Carbon + Metal Boat"
+        },
+        {
+          "label": "Deposition Direction",
+          "value": "Upward (입자 오염 방지)"
+        }
+      ],
       "applications": [],
       "patents": "",
       "quote": {
@@ -364,10 +756,59 @@
       "heroImage": null,
       "cardImage": null,
       "specGlance": [],
-      "overviewHeadline": "",
-      "overviewBody": "",
-      "features": "",
-      "specTable": [],
+      "overviewHeadline": "합리적 가격에\n재현 가능한 플라즈마.",
+      "overviewBody": "SMC-10G는 일관된 이온화 전류를 제공해 진공 변동에 관계없이 코팅 공정 전반에 걸쳐 신뢰할 수 있고 재현 가능한 성능을 보장합니다. 4kg 컴팩트 사이즈로 일반 실험실 벤치에 설치, WD와 압력은 응용에 맞춰 정밀 설정.\n\nTEM 시료 친수성·소수성 표면 변환에 특화되어 시료 위 분자 분산과 부착을 개선하고 분석 품질을 높입니다. 친수·소수 이중 시스템 옵션으로 둘을 한 장비에서 처리 가능.",
+      "features": "## 조절 가능한 작업 거리 (WD)\n시료에 대한 플라즈마 전극 위치 정밀 설정. 응용에 맞춰 미세 조정.\n\n## 전자식 니들 밸브 + APC (자동 압력 제어)\n사전 설정 진공 수준 정밀 유지 → 안정적 플라즈마 환경 → 재현 가능한 표면 처리.\n\n## 자동 진공 유지 (종료 후에도)\n종료 후에도 진공 자동 유지 → 헤드 내부 청결 유지. 다음 사용자가 원하는 진공에 빠르게 도달.\n\n## 친수성·소수성 이중 시스템 (옵션)\n친수성과 소수성 응용을 한 장비에서 모두 처리.\n- TEM 시료 분자 분산·부착 개선\n- 기판 코팅 전 표면 청정·활성화\n- 고분자·바이오 시료 표면 활성화\n\n## SMC-10S 폼팩터 호환\n동일 폼팩터(4kg, 185×185×245mm) — SMC-10S와 쇓으로 설치. 표면 처리 → 코팅 워크플로우 구성.",
+      "specTable": [
+        {
+          "label": "Ultimate Vacuum",
+          "value": "5.0 × 10⁻² Mbar"
+        },
+        {
+          "label": "Working Vacuum",
+          "value": "5.0 × 10⁻² ~ 5.0 × 10⁻¹ Mbar (권장 5 × 10⁻¹)"
+        },
+        {
+          "label": "Vacuum Measurement",
+          "value": "Pirani Gauge"
+        },
+        {
+          "label": "Stage 사이즈",
+          "value": "Ø 100 mm"
+        },
+        {
+          "label": "Stage Plate",
+          "value": "Ø 95 mm"
+        },
+        {
+          "label": "Max Current",
+          "value": "30 mA"
+        },
+        {
+          "label": "Product Size",
+          "value": "185 × 185 × 245 mm"
+        },
+        {
+          "label": "Weight",
+          "value": "4 kg"
+        },
+        {
+          "label": "Display",
+          "value": "5 inch LCD"
+        },
+        {
+          "label": "Option",
+          "value": "친수성·소수성 이중 시스템 통합"
+        },
+        {
+          "label": "APC",
+          "value": "자동 압력 제어"
+        },
+        {
+          "label": "Auto Vacuum Maintenance",
+          "value": "종료 후 진공 자동 유지"
+        }
+      ],
       "applications": [],
       "patents": "",
       "quote": {
@@ -396,8 +837,53 @@
       "specGlance": [],
       "overviewHeadline": "",
       "overviewBody": "",
-      "features": "",
-      "specTable": [],
+      "features": "## Touch Control Interface\nTime Mode · FTM Mode 자유 선택. 전류·시간 파라미터 터치 설정 · 실시간 진공도·증착 상황 한눈에.\n\n## Magnetron Sputtering\n열 발생 감소 — 열에 날카로운 생물·고분자(Polymer)도 변형·손상 없이 원형 코팅.\n\n## WD Z축 수동 조절 (40~80mm)\n시료-타겟 거리 공정에 맞춰 조절 → 코팅 균일도 · 열 영향 최소화.\n\n## 신속한 진공 도달 (5.0×10⁻² Torr)\n다량 시료 처리에 적합한 빠른 배기. 바쁜 실험 환경에서도 효율적.\n\n## 자유로운 타겟 교체\nAu · Pt · Pd · Cr · Ag 등 일반 금속. 응용에 맞춰 교체.\n\n## 컴팩트 설치\n280×280×350mm — 실험실 공간 효율 극대화.",
+      "specTable": [
+        {
+          "label": "Base Pressure",
+          "value": "5.0 × 10⁻² Mbar"
+        },
+        {
+          "label": "Working Pressure",
+          "value": "2.0 × 10⁻¹ ~ 1.0 × 10⁻² Mbar"
+        },
+        {
+          "label": "Vacuum Measurement",
+          "value": "Pirani Gauges"
+        },
+        {
+          "label": "FTM",
+          "value": "0.1 nm (unit)"
+        },
+        {
+          "label": "Max Current",
+          "value": "30 mA"
+        },
+        {
+          "label": "Targets",
+          "value": "Au · Pt · Pd · Cr · Ag 등 (교체 가능)"
+        },
+        {
+          "label": "Stage",
+          "value": "Manual Z Axis Control"
+        },
+        {
+          "label": "Working Distance",
+          "value": "40 ~ 80 mm"
+        },
+        {
+          "label": "Chamber Size",
+          "value": "Ø 120 × 130 mm"
+        },
+        {
+          "label": "Product Size",
+          "value": "280 × 280 × 350 mm"
+        },
+        {
+          "label": "Weight",
+          "value": "12 kg"
+        }
+      ],
       "applications": [],
       "patents": "",
       "quote": {
@@ -426,8 +912,53 @@
       "specGlance": [],
       "overviewHeadline": "",
       "overviewBody": "",
-      "features": "",
-      "specTable": [],
+      "features": "## Auto WD 열 손상 방지\n터치패드로 WD 조절 → 열 손상 최소화 → 코팅 종료 시 로딩 위치 자동 복귀.\n\n## 스테이지 일체형 QCM\nQCM(수정 진동자) 센서가 스테이지와 함께 이동. 시료 위치와 동일한 조건에서 실시간 두께 감지.\n\n## Active Shutter (Pre-Sputtering)\n셔터가 닫힌 상태에서 타겟 표면 오염원 제거 → 깨끗한 입자만 시료에 증착 → 박막 순도 향상.\n\n## Planetary Rotation (옵션)\n자전과 공전 동시 수행 → 넓은 면적 웨이퍼·복잡 형상 시료에서 두께 균일도 향상.\n\n## 자유로운 타겟 교체\nAu · Pt · Pd · Cr · Ag · Ti 등 교체 가능.",
+      "specTable": [
+        {
+          "label": "Base Pressure",
+          "value": "5.0 × 10⁻³ Mbar"
+        },
+        {
+          "label": "Working Pressure",
+          "value": "2.0 × 10⁻¹ ~ 1.0 × 10⁻² Mbar"
+        },
+        {
+          "label": "Vacuum Measurement",
+          "value": "Pirani Gauges"
+        },
+        {
+          "label": "FTM",
+          "value": "0.1 nm (unit)"
+        },
+        {
+          "label": "Max Current",
+          "value": "150 mA"
+        },
+        {
+          "label": "Targets",
+          "value": "Au · Pt · Pd · Cr · Ag · Ti 등 (교체 가능)"
+        },
+        {
+          "label": "Stage",
+          "value": "Auto X axis · Rotation · Planetary Rotation"
+        },
+        {
+          "label": "Working Distance",
+          "value": "40 ~ 80 mm"
+        },
+        {
+          "label": "Chamber Size",
+          "value": "Ø 120 × 130 mm"
+        },
+        {
+          "label": "Product Size",
+          "value": "280 × 280 × 350 mm"
+        },
+        {
+          "label": "Weight",
+          "value": "12 kg"
+        }
+      ],
       "applications": [],
       "patents": "",
       "quote": {
@@ -456,8 +987,53 @@
       "specGlance": [],
       "overviewHeadline": "",
       "overviewBody": "",
-      "features": "",
-      "specTable": [],
+      "features": "## 원소 간섭 없는 정밀 분석\nPt·Au 대비 낮은 원자 번호 → X-선 간섭 최소화 → EDS 정량 분석·미량 원소 검출 이상적.\n\n## 미세 형상 보존\n입자가 작은 막 형성 → 시료 표면 미세 굴곡·디테일 왜곡 없이 보존.\n\n## 광범위 두께 (nm ~ 수십 nm)\nPulse 방전 + High Current(100A) 제어 → EBSD 용 nm 초박막부터 FIB 보호층 수십 nm 후막까지.\n\n## 듀얼 모드\n- Thickness Mode: 0.1nm QCM 센서, 설정 두께 도달 시 자동 종료\n- Fire Count Mode: 설정 횟수(Interval, Fire count)만큼 정밀 방전",
+      "specTable": [
+        {
+          "label": "Base Pressure",
+          "value": "5.0 × 10⁻³ Mbar"
+        },
+        {
+          "label": "Working Pressure",
+          "value": "1.0 × 10⁻² Mbar 이하"
+        },
+        {
+          "label": "Vacuum Measurement",
+          "value": "Pirani Gauges"
+        },
+        {
+          "label": "FTM",
+          "value": "0.1 nm (unit)"
+        },
+        {
+          "label": "Max Current",
+          "value": "100 A"
+        },
+        {
+          "label": "Coating Mode",
+          "value": "Thickness Mode · Fire Count Mode"
+        },
+        {
+          "label": "Stage",
+          "value": "Auto X axis · Rotation"
+        },
+        {
+          "label": "Working Distance",
+          "value": "40 ~ 80 mm"
+        },
+        {
+          "label": "Chamber Size",
+          "value": "Ø 120 × 130 mm"
+        },
+        {
+          "label": "Product Size",
+          "value": "280 × 280 × 350 mm"
+        },
+        {
+          "label": "Weight",
+          "value": "12 kg"
+        }
+      ],
       "applications": [],
       "patents": "",
       "quote": {
@@ -486,8 +1062,25 @@
       "specGlance": [],
       "overviewHeadline": "",
       "overviewBody": "",
-      "features": "",
-      "specTable": [],
+      "features": "## 출시 준비 중\n정확한 사양과 옵션은 출시 전 확정. 관심 있으시면 설치 앬림 신청 가능.\n\n## 현재 대안\nSEMIAN의 표면 청정 응용은 SMC-10G Glow Discharge 또는 SOC-12F Glow Discharge 통합 장비로 우선 대응 가능.",
+      "specTable": [
+        {
+          "label": "Status",
+          "value": "개발 중"
+        },
+        {
+          "label": "ETA",
+          "value": "출시 시점 확정 전"
+        },
+        {
+          "label": "Application",
+          "value": "유기 잔류물 제거 · 표면 활성화"
+        },
+        {
+          "label": "Current Alternative",
+          "value": "SMC-10G (Glow Discharge) 또는 SOC-12F (통합)"
+        }
+      ],
       "applications": [],
       "patents": "",
       "quote": {
