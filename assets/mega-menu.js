@@ -1,4 +1,4 @@
-(function () {
+﻿(function () {
   'use strict';
 
   var MEGA_MENU_HTML = '' +
@@ -8,24 +8,24 @@
     '      <div class="mega-menu__heading">SPUTTER COATERS</div>' +
     '      <div class="mega-menu__list">' +
     '        <a href="/products/smc-22ts/" class="mega-menu__link"><strong>SMC-22TS</strong><em>Triple Gun Sputter</em></a>' +
-    '        <a href="/products/smc-22td/" class="mega-menu__link"><strong>SMC-22DS</strong><em>Dual Gun Sputter · 2026</em></a>' +
+    '        <a href="/products/smc-22ds/" class="mega-menu__link"><strong>SMC-22DS</strong><em>Dual Gun Sputter 쨌 2026</em></a>' +
     '        <a href="/products/smc-15s/" class="mega-menu__link"><strong>SMC-15S</strong><em>HV Sputter</em></a>' +
     '        <a href="/products/smc-10s/" class="mega-menu__link"><strong>SMC-10S</strong><em>Mini Sputter</em></a>' +
-    '        <a href="/products/rs/" class="mega-menu__link"><strong>RS</strong><em>Rotary Sputter · 2026</em></a>' +
-    '        <a href="/products/rs-tf/" class="mega-menu__link"><strong>RS-TF</strong><em>Rotary Thin Film · 2026</em></a>' +
+    '        <a href="/products/rs/" class="mega-menu__link"><strong>RS</strong><em>Rotary Sputter 쨌 2026</em></a>' +
+    '        <a href="/products/rs-tf/" class="mega-menu__link"><strong>RS-TF</strong><em>Rotary Thin Film 쨌 2026</em></a>' +
     '      </div>' +
     '    </div>' +
     '    <div class="mega-menu__col">' +
     '      <div class="mega-menu__heading">CARBON COATERS</div>' +
     '      <div class="mega-menu__list">' +
     '        <a href="/products/smc-15e/" class="mega-menu__link"><strong>SMC-15E</strong><em>Auto Carbon Coater</em></a>' +
-    '        <a href="/products/rs-carbon/" class="mega-menu__link"><strong>RS-Carbon</strong><em>Rotary Carbon · 2026</em></a>' +
+    '        <a href="/products/rs-carbon/" class="mega-menu__link"><strong>RS-Carbon</strong><em>Rotary Carbon 쨌 2026</em></a>' +
     '      </div>' +
     '    </div>' +
     '    <div class="mega-menu__col">' +
     '      <div class="mega-menu__heading">OSMIUM COATERS</div>' +
     '      <div class="mega-menu__list">' +
-    '        <a href="/products/soc-12f/" class="mega-menu__link"><strong>SOC-12F</strong><em>Fume Integrated · Patented</em></a>' +
+    '        <a href="/products/soc-12f/" class="mega-menu__link"><strong>SOC-12F</strong><em>Fume Integrated 쨌 Patented</em></a>' +
     '        <a href="/products/soc-12n/" class="mega-menu__link"><strong>SOC-12N</strong><em>Export Model</em></a>' +
     '      </div>' +
     '    </div>' +
