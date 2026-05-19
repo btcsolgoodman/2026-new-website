@@ -8,7 +8,7 @@
     '      <div class="mega-menu__heading">SPUTTER COATERS</div>' +
     '      <div class="mega-menu__list">' +
     '        <a href="/products/smc-22ts/" class="mega-menu__link"><strong>SMC-22TS</strong><em>Triple Gun Sputter</em></a>' +
-    '        <a href="/products/smc-22td/" class="mega-menu__link"><strong>SMC-22TD</strong><em>Double Gun Sputter · New</em></a>' +
+    '        <a href="/products/smc-22td/" class="mega-menu__link"><strong>SMC-22DS</strong><em>Dual Gun Sputter · 2026</em></a>' +
     '        <a href="/products/smc-15s/" class="mega-menu__link"><strong>SMC-15S</strong><em>HV Sputter</em></a>' +
     '        <a href="/products/smc-10s/" class="mega-menu__link"><strong>SMC-10S</strong><em>Mini Sputter</em></a>' +
     '        <a href="/products/rs/" class="mega-menu__link"><strong>RS</strong><em>Rotary Sputter · 2026</em></a>' +
