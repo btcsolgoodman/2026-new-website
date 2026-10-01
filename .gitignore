@@ -38,3 +38,9 @@ yarn-error.log*
 .env
 .env.local
 _secrets/
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+!.env.example
